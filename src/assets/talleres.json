@@ -1,0 +1,5 @@
+[
+    { "nombre_de_taller": "Zapatería", "cantidad_de_internos_trabajadores": 15 },
+    { "nombre_de_taller": "Sastrería", "cantidad_de_internos_trabajadores": 24 },
+    { "nombre_de_taller": "Panadería", "cantidad_de_internos_trabajadores": 3 }
+]

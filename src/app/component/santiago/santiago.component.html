@@ -1,0 +1,41 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+        <h1 class="titProv">Santiago del Estero</h1>      
+        <h1>Unidad 35 - Instituto Penal Federal de Colonia Pinto</h1>
+        <img src="./assets/img/u35.png" alt="Unidad 35">
+        <p> <strong>Detalle de trabajo</strong> <br> La unidad cuenta con los siguientes talleres productivos: Carpintería, Herrería, Armado de escobas, Panadería, Huerta orgánica.
+        </p>
+        <details class="details-container">
+            <summary class="details-summary">Detalles de talleres</summary>
+            <div class="talleres-container">
+              <table class="talleres-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Taller</th>
+                    <th>Internos Trabajadores</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let taller of talleressantiagou35">
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    <td><b>{{ taller.nombre_de_taller }}</b></td>
+                    <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><p><strong>Total de Internos: </strong></p></td>
+                    <td>{{ totalInternossantiagou35 }}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </details>         
+    </div>
+
+
+
+</div>
+

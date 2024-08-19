@@ -1,0 +1,294 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+
+        <h1 class="titProv">Buenos Aires</h1>
+        <div class="botonera">
+            <button (click)="templateSelected=complejoUno">CPF1</button>
+            <button (click)="templateSelected=complejoDos">CPF2</button>
+            <button (click)="templateSelected=complejoCuatro">CPF4</button>
+            <button (click)="templateSelected=unidadTreintaUno">U31</button>
+            <button (click)="templateSelected=unidadDiecinueve">U19</button>
+            <button (click)="templateSelected=complejoJa">CPFJA</button>
+            <button (click)="templateSelected=complejoCaba">CPFCABA</button>
+        </div>
+
+        <ng-container *ngTemplateOutlet="templateSelected?templateSelected:complejoUno">
+        </ng-container>
+    </div>
+</div>
+<ng-template #complejoUno>
+    
+    <h1>Complejo Penitenciario Federal I - Ezeiza</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/cpf1.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf1-2.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf1-3.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>     
+        <slide>
+            <img src="./assets/img/cpf1-4.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>   
+        <slide>
+            <img src="./assets/img/cpf1-5.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>   
+        <slide>
+            <img src="./assets/img/cpf1-6.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
+        </slide>   
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> 
+        <br>
+        La unidad cuenta, entre otros, con los siguientes talleres productivos: Panadería, Herrería, Carpintería, Zapatería, Sastrería, Imprenta, Armado de carteras.
+    </p>
+    <div class="talleres-container">
+        <table class="talleres-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Taller</th>
+                    <th>Internos Trabajadores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    <td><b>Zapatería</b></td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Sastrería" class="taller-icon"></td>
+                    <td><b>Sastrería</b></td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Panadería" class="taller-icon"></td>
+                    <td><b>Panadería</b></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Mayordomía" class="taller-icon"></td>
+                    <td><b>Mayordomía</b></td>
+                    <td>66</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Mantenimiento" class="taller-icon"></td>
+                    <td><b>Mantenimiento Gral del Establecimiento</b></td>
+                    <td>53</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Imprenta" class="taller-icon"></td>
+                    <td><b>Imprenta</b></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Huerta" class="taller-icon"></td>
+                    <td><b>Huerta</b></td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Higiene" class="taller-icon"></td>
+                    <td><b>Higiene de Alojamientos</b></td>
+                    <td>398</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Costura" class="taller-icon"></td>
+                    <td><b>Costura</b></td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Carpintería Metálica" class="taller-icon"></td>
+                    <td><b>Carpintería Metálica</b></td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Carpintería de Madera" class="taller-icon"></td>
+                    <td><b>Carpintería de Madera</b></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Aseo y Limpieza" class="taller-icon"></td>
+                    <td><b>Aseo y Limpieza</b></td>
+                    <td>46</td>
+                </tr>
+                <tr>
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Artículos de Limpieza" class="taller-icon"></td>
+                    <td><b>Artículos de Limpieza</b></td>
+                    <td>107</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/_xP9N_ofyw0" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+</ng-template>
+
+<ng-template #complejoDos>
+    <h1>Complejo Penitenciario Federal II - Marcos Paz</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/cpf2.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf2-2.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf2-3.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> El establecimiento cuenta con los siguientes talleres productivos: Herrería, Carpintería, Armado de broches de madera, Parques y jardines, Pastas, Repostería,Panadería, Sastrería, Carpintería
+    </p>
+</ng-template>
+
+<ng-template #complejoCuatro>
+    <h1>Complejo Penitenciario Federal IV de Mujeres - Ezeiza</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/cpf4.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-2.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-3.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-4.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-5.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-6.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cpf4-7.png" alt="Complejo Penitenciario Federal 4" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> La unidad cuenta, entre otros, con los siguientes talleres productivos: Cerámica, Costura y Tejido, Encuadernación, Fibrofacíl, Huerta y Jardinería, Lavadero, Muñequería, Peluquería, Repostería y Sandwichería, Serigrafía.
+    </p>
+</ng-template>
+<ng-template #unidadTreintaUno>
+    <h1>Unidad 31 - Centro Federal de Detención de Mujeres - Ezeiza </h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u31.png" alt="Unidad 31" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u31-2.png" alt="Unidad 31" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u31-3.png" alt="Unidad 31" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u31-4.png" alt="Unidad 31" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br>La unidad cuenta con los siguientes talleres productivos: Costura, Marroquinería, Muñequería, Panadería, Armado de carpetas, Armado de bolsas de cartón, Lavandería. 
+    </p>
+</ng-template>
+
+<ng-template #unidadDiecinueve>
+
+    <h1>Unidad 19 - Colonia Penal de Ezeiza</h1>
+
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/uCRj6y2KiEc" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+<br>
+<br>
+   
+    <carousel>
+        <slide>
+            <img src="./assets/img/u19.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-2.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-3.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-4.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-5.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-6.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-7.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/u19-8.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
+
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong>
+        <br> La Colonia Penal de Ezeiza U.19,   habilitada el 20 de abril en el año 1968, es un establecimiento con régimen semi abierto y  abierto que aloja, en seis pabellones comunes, a personas privadas de libertad que se encuentran en la última etapa de tratamiento.
+        <br>Este establecimiento de 350 hectáreas de superficie tiene como misión, a través Ente de Cooperación Técnica y Financiera del Servicio Penitenciario Federal, la capacitación laboral de los privados de libertad allí alojados. La misma  se canaliza a través de diversos cursos de acuerdo a las necesidades de los talleres de laborterapia existentes en todo el país. Además contribuye al desarrollo profesional del agente penitenciario, que es capacitado para acompañar y orientar al interno en este proceso. 
+        <br>Talleres agropecuarios e industriales:
+        <br>Agentes e internos son certificados por entidades que trabajan en conjunción con el Servicio Penitenciario Federal a través del ENCOPE. 
+        <br>Desde 2019  se proyectó, a través de la Organización Internacional Agropecuaria  (OIA) el taller de “huerta orgánica”, actividad relevante en la colonia por ser única entre los establecimientos penitenciarios. Dando continuidad con esta actividad se culminó de manera exitosa  la capacitación y la certificación a maestros e internos. En la actualidad, estos proyectos fueron de suma importancia, ya que permitieron generar un banco de semillas propio de origen orgánico. Permitiendo incorporar nuevas especies  y el origen del material utilizado.
+        <br>Dentro de las tradicionales actividades que tiene la colonia, se encuentra el taller de agropecuaria, el cual consiste en la siembra y pastura para abastecer al taller de tambo. El producto terminado no solo se emplea en el consumo propio sino que abastece a talleres de otros establecimientos. 
+        <br>El origen del alimento balanceado es  fundamental y se ve reflejado en la especie tanto vacuna como porcina que se cría en la colonia, dando lugar a buena calidad de los productos  que resultan de los mismos, tales como: tres variedades de quesos (cuartirolo (pasta blanda),  pategras (pasta semidura) y  reggianito (pasta dura))  que se fabrican en el “taller de quesería” y productos de carne de lechón que se elaboran en la sala de faena que se encuentra  dentro del  “taller de porcicultura”.
+        <br>El Instituto Nacional de Tecnología Industrial es una de las entidades que trabaja en conjunto con el ENCOPE en materia de capacitación, logrando  afianzar mediante elaboraciones y prácticas, los procesos que son llevados a cabo en los distintos tipos de queso artesanal.
+        <br>“Taller de tambo”: La principal actividad de este taller es la producción de Leche, la cual se obtiene por del rodeo vacuno  de raza Holando Argentino y  se realiza mediante las técnicas y procedimientos aplicables en la industria, se efectúan los análisis y seguimientos productivos destinados a mejorar la producción de la misma, como así también su calidad. También se procura por la higiene y seguridad industrial del taller, principalmente en la zona de la máquina de ordeñe y tanque enfriador de la leche obtenida.
+        <br>“Taller de porcicultura”: El taller de Porcicultura está orientado a la producción específica de Lechones. La porcicultura requiere de la realización de las tareas más diversas, que incluyen desde la sanidad del rodeo productivo hasta la faena de lechones incurriendo así en la etapa productiva. El taller es mantenido diariamente en su limpieza e higiene de los animales, y los mismos son alimentados por alimento balanceado producido en la unidad. 
+        <br>Otra actividad es el mantenimiento en general y la fabricación de productos de hierro  artesanales en  el “taller de herrería”,  así como también se fabrican productos en madera en el “taller de carpintería”. 
+        <br>Cada uno de los oficios ejercidos  en los talleres mantiene las medidas de bioseguridad según protocolo por virus SARS COVID 19. Es por ello que teniendo en cuenta los escenarios actuales, otra de las actividades fundamentales e indispensables se desarrolla en el “taller de domisanitario” en el cual se elaboran y envasan  productos tales como: desodorante de pisos para abastecimiento de todos los establecimientos penitenciarios que permite mantener continuamente los espacios de los mismos limpios y desinfectados.
+        <br>A demás se han llevado a cabo diversas remodelaciones en la infraestructura de los talleres productivos radicando mayor cantidad de puestos para futuros trabajadores.
+        <br>ENCOPE, brindando oportunidades, capacitación y trabajo.
+    </p>
+</ng-template>
+
+<ng-template #complejoJa>
+    <h1>Complejo Federal de Jóvenes Adultos – Marcos Paz</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/cfja.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cfja2.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/cfja3.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p>
+        <strong>Detalle de trabajo</strong> <br> En el establecimiento se desarrollan los siguientes talleres productivos: Armado de pelotas, Armado de bicicletas, Carpintería, Herrería, Armado de bolsas de papel, Porcicultura, Cría bovina, Elaboración de artículos de limpieza, Armado de escobas y escobillones, Armado de broches, Taller de panadería, Producción de snacks.
+    </p>
+</ng-template>
+
+<ng-template #complejoCaba>
+    <h1>Complejo Penitenciario Federal de la Ciudad Autónoma de Buenos Aires - DEVOTO</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/caba.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/caba2.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+        <slide>
+            <img src="./assets/img/caba3.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p>
+        <strong>Detalle de trabajo</strong> <br> La unidad cuenta, entre otros, con los siguientes talleres productivos: Panadería, Sastrería, Herrería, Carpintería, Automotores, Domisanitario, Armado de bolsas de madera.
+    </p>
+</ng-template>

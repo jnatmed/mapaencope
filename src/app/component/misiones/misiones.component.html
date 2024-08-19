@@ -1,0 +1,53 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">      
+        <h1 class="titProv">Misiones</h1>
+        <h1>Unidad 17 - Colonia Penal de Candelaria</h1>
+        <img src="./assets/img/u17.png" alt="Unidad17">
+        <p> <strong>Detalle de trabajo</strong> <br>
+        
+            La unidad cuenta, entre otros, con los siguientes talleres productivos:
+
+            Albañilería,
+            Bloquería,
+            Carpintería,
+            Herrería,
+            Mecánica,
+            Panadería,
+            Yerbal,
+            Avicultura,
+            Porcicultura,
+            Huerta
+        </p>
+
+        <details class="details-container">
+            <summary class="details-summary">Detalles de talleres</summary>
+            <div class="talleres-container">
+              <table class="talleres-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Taller</th>
+                    <th>Internos Trabajadores</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let taller of talleresmisionesu17">
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    <td><b>{{ taller.nombre_de_taller }}</b></td>
+                    <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><p><strong>Total de Internos: </strong></p></td>
+                    <td>{{ totalInternosmisionesu17 }}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </details>         
+    </div>
+    
+</div>
+

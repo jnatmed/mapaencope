@@ -1,0 +1,135 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+
+        <h1 class="titProv">Rio Negro</h1>
+        <div class="botonera">
+            <button (click)="templateSelected=unidad5">U5</button>
+            <button (click)="templateSelected=unidad12">U12</button>
+        </div>
+
+        <ng-container *ngTemplateOutlet="templateSelected?templateSelected:unidad5">
+        </ng-container>
+    </div>
+</div>
+<ng-template #unidad5>
+    <h1> Unidad 5 - Colonia Penal de General Roca </h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u5.png" alt="Unidad 5 - Colonia Penal de General Roca" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+    <br>
+    <br>
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/xWIqdJbwBWo" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <p> <strong>Detalle de trabajo</strong> 
+        <br> La unidad cuenta, entre otros, con los siguientes talleres industriales, de laborterapia y de mantenimiento:
+
+Albañilería,
+Plomería,
+Cocina,
+Electrotécnica,
+Aserradero,
+Mosaiquería,
+Sastrería,
+Carpintería,
+Ladrillería,
+Panadería,
+Herrería,
+Mecánica,
+Talleres agropecuarios,
+
+Horticultura,
+Vivero y jardinería,
+Fruticultura
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of talleresrionegrou5">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternosrionegrou5 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+
+</ng-template>
+
+<ng-template #unidad12>
+    <h1>Unidad 12 - Colonia Penal de Viedma</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u12.png" alt="Unidad 12 - Colonia Penal de Viedma" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> Los talleres se encuentran organizados en distintas secciones. Entre otros se dictan:
+
+        Horticultura,
+        Agricultura,
+        Porcicultura,
+        Herrería,
+        Carpintería,
+        Chapa,
+        Pintura,
+        Mecánica,
+        Panadería,
+        Lavadero de autos,
+        Bloquería,
+        Sastrería
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of talleresrionegrou12">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternosrionegrou12 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+
+</ng-template>
+

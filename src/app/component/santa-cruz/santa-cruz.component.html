@@ -1,0 +1,50 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv"> 
+        <h1 class="titProv">Santa cruz</h1>     
+        <h1>Unidad 15 - Cárcel de Río Gallegos</h1>
+        <img src="./assets/img/u15.png" alt="Unidad 15">
+        <p> <strong>Detalle de trabajo</strong> <br>
+        
+            El establecimiento cuenta con los siguientes talleres productivos:
+
+Carpintería,
+Herrería,
+Bloquería,
+Tapicería,
+Panadería
+          
+        </p>
+        <details class="details-container">
+            <summary class="details-summary">Detalles de talleres</summary>
+            <div class="talleres-container">
+              <table class="talleres-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Taller</th>
+                    <th>Internos Trabajadores</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let taller of tallersantacruzu15">
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    <td><b>{{ taller.nombre_de_taller }}</b></td>
+                    <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><p><strong>Total de Internos: </strong></p></td>
+                    <td>{{ totalInternossantacruzu15 }}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </details>         
+    </div>
+
+
+
+</div>
+

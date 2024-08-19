@@ -1,0 +1,32 @@
+<div>
+    <div class="textMap">
+        <h2>Seleccioná la provincia para visualizar las unidades o complejos</h2> 
+        <h4>Las provincias que tienen un color diferente no poseen unidades o complejos.</h4>
+    </div>
+
+    <div class="middle-text"> </div>
+    <div class="mapaWeb">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1800 2300">
+          <svg:path 
+            *ngFor="let prov of provincias; let i = index"
+            [attr.data-index]="i"
+            (mouseover)="hover(i)"
+            (mouseout)="out(i)"
+            (click)="click(prov.component)"
+            [attr.d]="prov.provinciaPath"
+            [attr.fill]="prov.fill"
+            stroke="white"
+            stroke-width="3">
+             
+          </svg:path>
+        </svg>
+
+    </div>
+
+    <div class="provincia" *ngIf="template">
+
+        <ng-container *ngComponentOutlet="template"></ng-container>
+
+    </div>
+
+</div>

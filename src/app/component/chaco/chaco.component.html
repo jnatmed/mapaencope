@@ -1,0 +1,135 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+
+        <h1 class="titProv">Chaco</h1>
+        <div class="botonera">
+            <button (click)="templateSelected=unidad7">U7</button>
+            <button (click)="templateSelected=unidad11">U11</button>
+        </div>
+
+        <ng-container *ngTemplateOutlet="templateSelected?templateSelected:unidad7">
+        </ng-container>
+    </div>
+</div>
+<ng-template #unidad7>
+    <h1> Unidad 7 - Prisión Regional del Norte </h1>
+
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/qGlLLrCCQ8E" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <carousel>
+        <slide>
+            <img src="./assets/img/u7.png" alt="Unidad 7 - Prisión Regional del Norte" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br>La unidad cuenta con los siguientes talleres:
+        Albañilería,
+        Herrería de obra,
+        Bloquería,
+        Horticultura,
+        Huerta orgánica,
+        Carpintería,
+        Imprenta,
+        Carpintería metálica,
+        Panadería,
+        Electricidad,
+        Plomería,
+        Lavadero de autos,
+        Jardinería,
+        Zapatería,
+        Sastrería,
+        Mecánica
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereschacou7">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoschacou7 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details>  
+
+</ng-template>
+
+<ng-template #unidad11>
+    <h1>Unidad 11 - Colonia Penal de Presidencia Roque Sáenz Peña</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u11.png" alt="Unidad 11 - Colonia Penal de Presidencia Roque Sáenz Peña" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> Cuenta, entre otros, con los siguientes talleres productivos:
+
+        Sastrería,
+        Lavadero de ropa,
+        Carpintería,
+        Aserradero,
+        Ladrillería,
+        Albañilería,
+        Panadería,
+        Plomería,
+        Cocina central,
+        Chapa y pintura,
+        Automotores,
+        Herrería,
+        Agricultura,
+        Tambo,
+        Porcicultura,
+        Horticultura
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereschacou11">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoschacou11 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details>      
+</ng-template>
+

@@ -1,0 +1,52 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">  
+        <h1 class="titProv">Neuquen</h1>    
+        <h1>Complejo Penitenciario Federal V</h1>
+        <img src="./assets/img/cpf5.png" alt="Complejo V">
+        <p> <strong>Detalle de trabajo</strong> <br>
+        
+            Cuenta con talleres de:
+
+Jardinería,
+Electricidad,
+Artículos de limpieza,
+Plomería,
+Albañilería,
+Horticultura,
+Guitarra
+        </p>
+
+        <details class="details-container">
+            <summary class="details-summary">Detalles de talleres</summary>
+            <div class="talleres-container">
+              <table class="talleres-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Taller</th>
+                    <th>Internos Trabajadores</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let taller of talleresneuquencpfv">
+                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    <td><b>{{ taller.nombre_de_taller }}</b></td>
+                    <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><p><strong>Total de Internos: </strong></p></td>
+                    <td>{{ totalInternosneuquencpfv }}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </details>         
+    </div>
+
+
+
+</div>
+

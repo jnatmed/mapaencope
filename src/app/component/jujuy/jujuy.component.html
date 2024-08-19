@@ -1,0 +1,109 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+
+        <h1 class="titProv">Jujuy</h1>
+        <div class="botonera">
+            <button (click)="templateSelected=unidad8">U8</button>
+            <button (click)="templateSelected=unidad22">U22</button>
+        </div>
+
+        <ng-container *ngTemplateOutlet="templateSelected?templateSelected:unidad8">
+        </ng-container>
+    </div>
+</div>
+<ng-template #unidad8>
+    <h1> Unidad 8 - Instituto Penitenciario Federal </h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u8.png" alt="Unidad 8 - Instituto Penitenciario Federal" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <br>
+    <br>
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/T1FckdWyZ-k" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <p> <strong>Detalle de trabajo</strong> 
+        <br>En la unidad se dictan diferentes talleres: Bloquería, Tallado de madera, Carpintería industrial,  Herrería, Panadería, Albañilería, Electricidad, Plomería
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of talleresjujuyu8">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternosjujuyu8 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+
+</ng-template>
+
+<ng-template #unidad22>
+    <h1>Unidad 22 - Cárcel Federal de Jujuy</h1>
+<!--      <carousel>
+        <slide>
+            <img src="./assets/img/u22.png" alt="Unidad 22 - Cárcel Federal de Jujuy" style="display: block; width: 100%;">
+        </slide>
+    </carousel>  -->
+
+    <iframe width="100%" height="315px" src="https://www.youtube.com/embed/znKoeZNMTDk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+<!--     <p> <strong>Detalle de trabajo</strong> <br> La unidad cuenta, con los siguientes talleres productivos: Artesanía, Repostería, Costura
+        
+    </p> -->
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of talleresjujuyu22">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternosjujuyu22 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+</ng-template>
+

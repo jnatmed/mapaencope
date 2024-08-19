@@ -1,0 +1,218 @@
+<div class="cuadroProvincia">
+    <div class="contenedorProv">
+
+        <h1 class="titProv">La Pampa</h1>
+        <div class="botonera">
+            <button (click)="templateSelected=unidad4">U4</button>
+            <button (click)="templateSelected=unidad13">U13</button>
+			<button (click)="templateSelected=unidad25">U25</button>
+			<button (click)="templateSelected=unidad30">U30</button>
+        </div>
+
+        <ng-container *ngTemplateOutlet="templateSelected?templateSelected:unidad4">
+        </ng-container>
+    </div>
+</div>
+<ng-template #unidad4>
+    <h1> Unidad 4 - Colonia Penal de Santa Rosa </h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u4.png" alt="Unidad 4 - Colonia Penal de Santa Rosa" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> 
+        <br> Los talleres productivos de este establecimiento se dividen en tres secciones:
+
+        Industrial: herrería, corte y doblado de chapa, carpintería, imprenta, fabrica de ladrillos, sastrería, panadería, aserradero, mecánica, chapa y pintura.
+        Agropecuario: tambo, porcicultura, avicultura, chacinados, fábrica de quesos, agricultura, corte de leña, parques y jardines, horticultura, apicultura y cunicultura.
+        Mantenimiento: albañilería, plomería, electrotécnica, lavadero, peluquería.
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereslapampau4">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoslapampau4 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+
+</ng-template>
+
+<ng-template #unidad13>
+    <h1>Unidad 13 - Instituto Correccional de Mujeres</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u13.png" alt="Unidad 13 - Instituto Correccional de Mujeres" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> Cuenta, entre otros, con los siguientes talleres productivos:
+
+        Repostería,
+        Lavandería,
+        Costura,
+        Tejido,
+        Muñequería,
+        Manualidades,
+        Horticultura,
+        Mantenimiento,
+        Cocina central
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereslapampau13">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoslapampau13 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details>     
+</ng-template>
+
+<ng-template #unidad25>
+    <h1>Unidad 25 - Instituto Correccional Abierto de General Pico</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u25.png" alt="Unidad 25 - Instituto Correccional Abierto de General Pico" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> Posee talleres productivos y de tareas generales, tales como:
+
+        Albañilería,
+        Carpintería,
+        Electricidad,
+        Herrería,
+        Lavadero de autos,
+        Panadería,
+        Parques y jardines.
+        A su vez, a 3 kilómetros se sitúa el campo laboral El Fortín, de 22 hectáreas, donde funcionan los talleres de:
+        
+        Avicultura,
+        Ovinocultura,
+        Porcicultura,
+        Cunicultura,
+        Agricultura
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereslapampau25">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoslapampau25 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details> 
+
+</ng-template>
+
+<ng-template #unidad30>
+    <h1>Unidad 30 - Instituto de Jóvenes Adultos</h1>
+    <carousel>
+        <slide>
+            <img src="./assets/img/u30.png" alt="Unidad 30 - Instituto de Jóvenes Adultos" style="display: block; width: 100%;">
+        </slide>
+    </carousel>
+
+    <p> <strong>Detalle de trabajo</strong> <br> La unidad cuenta, entre otros, con los siguientes talleres productivos:
+
+        Horticultura,
+        Lavadero de Automotores,
+        Carpintería,
+        Avicultura,
+        Herrería,
+        Panadería,
+        Mantenimiento general,
+    </p>
+
+    <details class="details-container">
+        <summary class="details-summary">Detalles de talleres</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let taller of tallereslapampau30">
+                <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                <td><b>{{ taller.nombre_de_taller }}</b></td>
+                <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><p><strong>Total de Internos: </strong></p></td>
+                <td>{{ totalInternoslapampau30 }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </details>     
+</ng-template>
