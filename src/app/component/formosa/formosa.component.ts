@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { ChartData, ChartOptions } from 'chart.js';
+import { Color } from 'ng2-charts';
 
-// Define la interfaz para los datos del taller
 interface Taller {
   nombre_de_taller: string;
   cantidad_de_internos_trabajadores: number;
@@ -14,8 +15,39 @@ interface Taller {
 export class FormosaComponent implements OnInit {
 
   templateSelected: TemplateRef<any>;
-  talleresformosau10: Taller[] = []; // Array para almacenar los datos de los talleres
-  totalInternosformosau10: number; // Variable para almacenar el total de internos trabajadores
+  talleresformosau10: Taller[] = [];
+  totalInternosformosau10: number;
+
+  // Configuración del gráfico
+  barChartOptions: ChartOptions = {
+    responsive: true,
+    scales: {
+      xAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  };
+  barChartLabels: string[] = []; // Nombres de talleres
+  barChartData: ChartData = {
+    labels: this.barChartLabels,
+    datasets: [
+      { data: [], label: 'Cantidad de Internos Trabajadores' }
+    ]
+  };
+  barChartColors: Color[] = [
+    { backgroundColor: 'rgba(0, 204, 204, 0.5)' }
+  ];
+  barChartLegend = true;
+  barChartPlugins = [];
+  barChartType: 'bar' = 'bar';
+  
 
   constructor() { }
 
@@ -41,5 +73,9 @@ export class FormosaComponent implements OnInit {
     this.totalInternosformosau10 = this.talleresformosau10.reduce((total, taller) => {
       return total + taller.cantidad_de_internos_trabajadores;
     }, 0);
+
+    // Actualiza los datos del gráfico
+    this.barChartLabels = this.talleresformosau10.map(taller => taller.nombre_de_taller);
+    this.barChartData.datasets[0].data = this.talleresformosau10.map(taller => taller.cantidad_de_internos_trabajadores);
   }
 }

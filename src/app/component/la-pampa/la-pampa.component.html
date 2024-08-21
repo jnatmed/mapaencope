@@ -5,8 +5,8 @@
         <div class="botonera">
             <button (click)="templateSelected=unidad4">U4</button>
             <button (click)="templateSelected=unidad13">U13</button>
-			<button (click)="templateSelected=unidad25">U25</button>
-			<button (click)="templateSelected=unidad30">U30</button>
+            <button (click)="templateSelected=unidad25">U25</button>
+            <button (click)="templateSelected=unidad30">U30</button>
         </div>
 
         <ng-container *ngTemplateOutlet="templateSelected?templateSelected:unidad4">

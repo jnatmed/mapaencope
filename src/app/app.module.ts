@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ChartsModule } from 'ng2-charts'; // Importa ChartsModule
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TierraDelFuegoComponent } from './component/tierra-del-fuego/tierra-del-fuego.component';
-import {MapaArgentinaComponent} from './pages/mapa-argentina/mapa-argentina.component';
+import { MapaArgentinaComponent } from './pages/mapa-argentina/mapa-argentina.component';
 import { BuenosAiresComponent } from './component/buenos-aires/buenos-aires.component';
 import { JujuyComponent } from './component/jujuy/jujuy.component';
 import { SaltaComponent } from './component/salta/salta.component';
@@ -45,7 +46,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ChartsModule // Añade ChartsModule aquí
   ],
   providers: [],
   bootstrap: [AppComponent]
