@@ -1,4 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
+import { ChartConfiguration, ChartType } from 'chart.js';
+import { Label } from 'ng2-charts';
 
 // Define la interfaz para los datos del taller
 interface Taller {
@@ -18,16 +20,29 @@ export class BuenosAiresComponent implements OnInit {
   tallerescpf2: Taller[] = []; // Array para almacenar los datos de los talleres
   tallerescpf4: Taller[] = []; // Nuevo array para los datos de los talleres
   talleresu19: Taller[] = []; // Nuevo array para los datos de los talleres
-  totalInternoscpf1: number; // Variable para almacenar el total de internos trabajadores
-  totalInternoscpf2: number; // Variable para almacenar el total de internos trabajadores
-  totalInternoscpf4: number; // Variable para almacenar el total de internos trabajadores
-  totalInternosu19: number; // Variable para almacenar el total de internos trabajadores
-
   tallerescfja: Taller[] = []; // Array para almacenar los datos de los talleres
-  totalInternoscfja: number; // Variable para almacenar el total de internos trabajadores
-
   tallerescpfcaba: Taller[] = []; // Array para almacenar los datos de los talleres
-  totalInternoscpfcaba: number; // Variable para almacenar el total de internos trabajadores
+
+  // Configuración del gráfico
+  public barChartOptions: ChartConfiguration<'bar'>['options'] = {
+    responsive: true,
+    scales: {
+      x: {
+        beginAtZero: true
+      },
+      y: {
+        beginAtZero: true
+      }
+    }
+  };
+  public barChartLabels: Label[] = [];
+  public barChartType: ChartType = 'bar';
+  public barChartLegend = true;
+
+  public barChartData: ChartConfiguration<'bar'>['data'] = {
+    labels: [],
+    datasets: []
+  };
 
   constructor() { }
 
@@ -102,51 +117,110 @@ export class BuenosAiresComponent implements OnInit {
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Armado de Broches', cantidad_de_internos_trabajadores: 9 },
-      { nombre_de_taller: 'Alimento Balanceado', cantidad_de_internos_trabajadores: 6 }
-    ];    
-
+      { nombre_de_taller: 'Adoquinado', cantidad_de_internos_trabajadores: 12 }
+    ];
 
     this.tallerescfja = [
-      { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 8 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 17 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 7 },
-      { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 3 },
-      { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 13 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 3 },
-      { nombre_de_taller: 'Carpintería Metálica', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 55 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 3 },
-      { nombre_de_taller: 'Artículos de Limpieza', cantidad_de_internos_trabajadores: 74 },
-      { nombre_de_taller: 'Alimento Balanceado', cantidad_de_internos_trabajadores: 3 }
+      { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 9 },
+      { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 37 },
+      { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 9 },
+      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 10 },
+      { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 1 },
+      { nombre_de_taller: 'Armado de Broches', cantidad_de_internos_trabajadores: 9 },
+      { nombre_de_taller: 'Albañilería', cantidad_de_internos_trabajadores: 4 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 15 },
+      { nombre_de_taller: 'Limpieza de Alojamiento', cantidad_de_internos_trabajadores: 19 }
     ];
 
-    // Simula la carga de datos
     this.tallerescpfcaba = [
-      { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 5 },
-      { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 9 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 11 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 184 },
-      { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Fibrofacil', cantidad_de_internos_trabajadores: 56 },
-      { nombre_de_taller: 'Electrotecnia', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Domisanitario', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 310 },
-      { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 8 },
-      { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 30 },
-      { nombre_de_taller: 'Armado de Juguetes Didácticos', cantidad_de_internos_trabajadores: 182 }
+      { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 2 },
+      { nombre_de_taller: 'Carpintería', cantidad_de_internos_trabajadores: 15 },
+      { nombre_de_taller: 'Mantenimiento General', cantidad_de_internos_trabajadores: 6 },
+      { nombre_de_taller: 'Limpieza', cantidad_de_internos_trabajadores: 7 },
+      { nombre_de_taller: 'Cocina', cantidad_de_internos_trabajadores: 4 }
     ];
 
-    // Calcula el total de internos trabajadores
-    this.totalInternoscpf1 = this.tallerescpf1.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
-    this.totalInternoscpf2 = this.tallerescpf2.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
-    this.totalInternoscpf4 = this.tallerescpf4.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
-    this.totalInternosu19 = this.talleresu19.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
-    this.totalInternoscfja = this.tallerescfja.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
-    this.totalInternoscpfcaba = this.tallerescpfcaba.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
+    // Calcula el total de internos trabajadores para cada array
+    const totalInternos = {
+      cpfc1: this.tallerescpf1.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0),
+      cpfc2: this.tallerescpf2.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0),
+      cpfc4: this.tallerescpf4.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0),
+      u19: this.talleresu19.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0),
+      cfja: this.tallerescfja.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0),
+      cpfcaba: this.tallerescpfcaba.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0)
+    };
 
+    // Configura los datos del gráfico
+    this.barChartLabels = [...new Set([
+      ...this.tallerescpf1.map(taller => taller.nombre_de_taller),
+      ...this.tallerescpf2.map(taller => taller.nombre_de_taller),
+      ...this.tallerescpf4.map(taller => taller.nombre_de_taller),
+      ...this.talleresu19.map(taller => taller.nombre_de_taller),
+      ...this.tallerescfja.map(taller => taller.nombre_de_taller),
+      ...this.tallerescpfcaba.map(taller => taller.nombre_de_taller)
+    ])];
+
+    this.barChartData.datasets = [
+      {
+        label: 'CPF1',
+        data: this.barChartLabels.map(label => {
+          const taller = this.tallerescpf1.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'CPF2',
+        data: this.barChartLabels.map(label => {
+          const taller = this.tallerescpf2.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'CPF4',
+        data: this.barChartLabels.map(label => {
+          const taller = this.tallerescpf4.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+        borderColor: 'rgba(255, 206, 86, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'U19',
+        data: this.barChartLabels.map(label => {
+          const taller = this.talleresu19.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'CFJA',
+        data: this.barChartLabels.map(label => {
+          const taller = this.tallerescfja.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(153, 102, 255, 0.2)',
+        borderColor: 'rgba(153, 102, 255, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'CPFCABA',
+        data: this.barChartLabels.map(label => {
+          const taller = this.tallerescpfcaba.find(t => t.nombre_de_taller === label);
+          return taller ? taller.cantidad_de_internos_trabajadores : 0;
+        }),
+        backgroundColor: 'rgba(255, 159, 64, 0.2)',
+        borderColor: 'rgba(255, 159, 64, 1)',
+        borderWidth: 1
+      }
+    ];
   }
 }
