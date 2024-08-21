@@ -11,34 +11,28 @@ Carpintería,
 Herrería,
 Bloquería,
 Tapicería,
-Panadería
+Panadería.
           
         </p>
         <details class="details-container">
-            <summary class="details-summary">Detalles de talleres</summary>
+            <summary class="details-summary">Total de internos trabajadores: {{ totalInternossantacruzu15 }}</summary>
             <div class="talleres-container">
               <table class="talleres-table">
                 <thead>
                   <tr>
-                    <th></th>
+                    
                     <th>Taller</th>
                     <th>Internos Trabajadores</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr *ngFor="let taller of tallersantacruzu15">
-                    <td><img src="./assets/icons/icon-taller.svg" alt="Zapatería" class="taller-icon"></td>
+                    
                     <td><b>{{ taller.nombre_de_taller }}</b></td>
                     <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr>
-                    <td></td>
-                    <td><p><strong>Total de Internos: </strong></p></td>
-                    <td>{{ totalInternossantacruzu15 }}</td>
-                  </tr>
-                </tfoot>
+
               </table>
             </div>
           </details>         

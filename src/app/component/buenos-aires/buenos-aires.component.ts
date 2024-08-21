@@ -18,10 +18,13 @@ export class BuenosAiresComponent implements OnInit {
   tallerescpf2: Taller[] = []; // Array para almacenar los datos de los talleres
   tallerescpf4: Taller[] = []; // Nuevo array para los datos de los talleres
   talleresu19: Taller[] = []; // Nuevo array para los datos de los talleres
+  tallerescpfvii: Taller[] = []; // Nuevo array para los datos de los talleres
+
   totalInternoscpf1: number; // Variable para almacenar el total de internos trabajadores
   totalInternoscpf2: number; // Variable para almacenar el total de internos trabajadores
   totalInternoscpf4: number; // Variable para almacenar el total de internos trabajadores
   totalInternosu19: number; // Variable para almacenar el total de internos trabajadores
+  totalInternoscpfvii: number; // Variable para almacenar el total de internos trabajadores
 
   tallerescfja: Taller[] = []; // Array para almacenar los datos de los talleres
   totalInternoscfja: number; // Variable para almacenar el total de internos trabajadores
@@ -140,6 +143,17 @@ export class BuenosAiresComponent implements OnInit {
       { nombre_de_taller: 'Armado de Juguetes Didácticos', cantidad_de_internos_trabajadores: 182 }
     ];
 
+    this.tallerescpfvii = [
+      { nombre_de_taller: 'Panaderia', cantidad_de_internos_trabajadores: 7 },
+      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 4 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 6 },
+      { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 3 },
+      { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 9 },
+      { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 22 },
+      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 48 },
+      { nombre_de_taller: 'Artículos de Limpieza', cantidad_de_internos_trabajadores: 4 },
+    ];
+
     // Calcula el total de internos trabajadores
     this.totalInternoscpf1 = this.tallerescpf1.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
     this.totalInternoscpf2 = this.tallerescpf2.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
@@ -147,6 +161,7 @@ export class BuenosAiresComponent implements OnInit {
     this.totalInternosu19 = this.talleresu19.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
     this.totalInternoscfja = this.tallerescfja.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
     this.totalInternoscpfcaba = this.tallerescpfcaba.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
+    this.totalInternoscpfvii = this.tallerescpfvii.reduce((total, taller) => total + taller.cantidad_de_internos_trabajadores, 0);
 
   }
 }
