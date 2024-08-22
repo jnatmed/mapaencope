@@ -26,7 +26,7 @@ export class MisionesComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 24 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 46 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 46 +22},
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 28 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 4 },
@@ -35,7 +35,7 @@ export class MisionesComponent implements OnInit {
       { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 13 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 22 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 22 }
     ];
 
     // Calcula el total de internos trabajadores

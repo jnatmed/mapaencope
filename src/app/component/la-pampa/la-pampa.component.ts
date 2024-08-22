@@ -38,7 +38,7 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 43 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 26 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 26 + 76},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 27 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 197 },
@@ -47,7 +47,7 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Biodigestor', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Avicultura', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 76 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 76 },
       { nombre_de_taller: 'Agricultura', cantidad_de_internos_trabajadores: 1 }
     ];
 
@@ -62,12 +62,12 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Muñequera', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Manualidades', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 3 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 3 + 5},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 5 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 5 }
     ];
 
     // Calcula el total de internos trabajadores

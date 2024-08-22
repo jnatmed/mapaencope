@@ -26,7 +26,7 @@ export class SantaCruzComponent implements OnInit {
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 4 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 23 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 23 + 11},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 13 },
       { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 15 },
@@ -34,7 +34,7 @@ export class SantaCruzComponent implements OnInit {
       { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 7 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 11 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 11 }
     ];
 
     // Calcula el total de internos trabajadores

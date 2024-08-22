@@ -28,7 +28,7 @@ export class SaltaComponent implements OnInit {
     this.tallersaltau16 = [
       { nombre_de_taller: 'Talabartería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 5 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 24 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 24 + 7},
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 20 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 20 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 5 },
@@ -36,7 +36,7 @@ export class SaltaComponent implements OnInit {
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 7 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Artículos de Limpieza', cantidad_de_internos_trabajadores: 3 }
     ];
 
@@ -53,14 +53,14 @@ export class SaltaComponent implements OnInit {
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 39 },
       { nombre_de_taller: 'Marroquinería y Talabartería', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 54 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 54 + 17},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 237 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 22 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 11 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 21 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 12 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 17 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 17 },
       { nombre_de_taller: 'Artículos de Limpieza', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Artesanías', cantidad_de_internos_trabajadores: 19 }
     ];

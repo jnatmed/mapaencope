@@ -31,7 +31,7 @@ export class RioNegroComponent implements OnInit {
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Mosaiquería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 28 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 27 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 27 + 19 },
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 109 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 9 },
@@ -40,7 +40,7 @@ export class RioNegroComponent implements OnInit {
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Aserradero', cantidad_de_internos_trabajadores: 11 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 19 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 19 },
       { nombre_de_taller: 'Apicultura', cantidad_de_internos_trabajadores: 1 }
     ];
 
@@ -53,7 +53,7 @@ export class RioNegroComponent implements OnInit {
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 19 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 22 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 8 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 33 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 33 + 20},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 14 },
@@ -62,7 +62,7 @@ export class RioNegroComponent implements OnInit {
       { nombre_de_taller: 'Cabaña Encope', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 22 },
       { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 14 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 20 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 20 },
       { nombre_de_taller: 'Agricultura - Reservas Forrajeras', cantidad_de_internos_trabajadores: 2 }
     ];
 

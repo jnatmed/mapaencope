@@ -57,7 +57,7 @@ export class FormosaComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Ovinocultura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 19 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 19 + 10},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Electrotecnia', cantidad_de_internos_trabajadores: 1 },
@@ -66,7 +66,7 @@ export class FormosaComponent implements OnInit {
       { nombre_de_taller: 'Chapa y Pintura', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Avicultura', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 10 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 10 }
     ];
 
     // Calcula el total de internos trabajadores

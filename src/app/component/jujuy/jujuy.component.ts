@@ -44,13 +44,13 @@ export class JujuyComponent implements OnInit {
     this.talleresjujuyu22 = [
       { nombre_de_taller: 'Repostería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 12 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 9 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 9 + 7},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 7 },
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Artesanías', cantidad_de_internos_trabajadores: 5 }
     ];
 

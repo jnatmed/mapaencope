@@ -30,7 +30,7 @@ export class ChacoComponent implements OnInit {
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 13 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 8 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 20 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 20 + 74 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 40 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 151 },
@@ -40,7 +40,7 @@ export class ChacoComponent implements OnInit {
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 9 },
       { nombre_de_taller: 'Automotores', cantidad_de_internos_trabajadores: 7 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 74 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 74 }
     ];
 
     // Calcula el total de internos trabajadores
@@ -52,14 +52,14 @@ export class ChacoComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 3 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 22 },
+      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 22 + 41 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 35 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 9 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 41 }
+      // { nombre_de_taller: 'Aseo y Limpieza', cantidad_de_internos_trabajadores: 41 }
     ];
 
     // Calcula el total de internos trabajadores
