@@ -30,6 +30,20 @@
         </table>
       </div>
     </details>
+    <!-- formosa.component.html -->
+    <div>
+      <h2>Gráfico de Torta de Talleres en Formosa</h2>
+      <div style="display: block;">
+        <canvas baseChart
+          [data]="pieChartData"
+          [options]="pieChartOptions"
+          [legend]="pieChartLegend"
+          [plugins]="pieChartPlugins"
+          [chartType]="pieChartType">
+        </canvas>
+      </div>
+      <p>Total de Internos Trabajadores: {{ totalInternosformosau10 }}</p>
+    </div>
 
   </div>
 </div>

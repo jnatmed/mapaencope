@@ -6,7 +6,10 @@
     width: 100%;
 }
 
-
+canvas {
+    width: 100%;
+    height: 400px; /* Ajusta según sea necesario */
+  }
 
 .contenedorProv img{
     max-width: 100%;
