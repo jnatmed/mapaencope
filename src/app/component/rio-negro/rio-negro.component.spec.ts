@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { RioNegroComponent } from './rio-negro.component';
 
@@ -6,7 +6,7 @@ describe('RioNegroComponent', () => {
   let component: RioNegroComponent;
   let fixture: ComponentFixture<RioNegroComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ RioNegroComponent ]
     })
