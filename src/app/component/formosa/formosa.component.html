@@ -14,36 +14,29 @@
         <table class="talleres-table">
           <thead>
             <tr>
-              
               <th>Taller</th>
               <th>Internos Trabajadores</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let taller of talleresformosau10">
-              
               <td><b>{{ taller.nombre_de_taller }}</b></td>
               <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
             </tr>
           </tbody>
-
         </table>
       </div>
     </details>
-    <!-- formosa.component.html -->
-    <div>
-      <h2>Gráfico de Torta de Talleres en Formosa</h2>
-      <div style="display: block;">
-        <canvas baseChart
-          [data]="pieChartData"
-          [options]="pieChartOptions"
-          [legend]="pieChartLegend"
-          [plugins]="pieChartPlugins"
-          [chartType]="pieChartType">
-        </canvas>
-      </div>
-      <p>Total de Internos Trabajadores: {{ totalInternosformosau10 }}</p>
+    
+    <!-- Aquí se agrega el gráfico de torta -->
+    <div class="chart-container">
+      <base-chart
+        [data]="pieChartData"
+        [options]="pieChartOptions"
+        [legend]="pieChartLegend"
+        [plugins]="pieChartPlugins"
+        [chartType]="pieChartType">
+      </base-chart>
     </div>
-
   </div>
 </div>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ChartsModule } from 'ng2-charts'; // Importa ChartsModule
+import { NgChartsModule } from 'ng2-charts'; // Cambia a NgChartsModule
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -47,7 +47,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
-    ChartsModule // Añade ChartsModule aquí
+    NgChartsModule // Usa NgChartsModule en lugar de ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
