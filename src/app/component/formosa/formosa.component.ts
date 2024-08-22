@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartData, ChartOptions } from 'chart.js';
+
 
 interface Taller {
   nombre_de_taller: string;
@@ -16,34 +16,6 @@ export class FormosaComponent implements OnInit {
   talleresformosau10: Taller[] = [];
   totalInternosformosau10: number;
 
-  // Configuración del gráfico
-  pieChartOptions: ChartOptions<'pie'> = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-    }
-  };
-
-  pieChartLabels: string[] = []; // Nombres de talleres
-  pieChartData: ChartData<'pie'> = {
-    labels: this.pieChartLabels,
-    datasets: [
-      { 
-        data: [], 
-        backgroundColor: [
-          '#FF6384', '#36A2EB', '#FFCE56', '#FF9F40', '#4BC0C0', 
-          '#9966FF', '#FF6F61', '#6A9A1F', '#D65DB1', '#FFC0CB', 
-          '#008080', '#FFA500', '#800080', '#FFD700', '#00FFFF'
-        ]
-      }
-    ]
-  };
-
-  pieChartLegend = true;
-  pieChartPlugins = [];
-  pieChartType: 'pie' = 'pie';
 
   constructor() { }
 
@@ -69,8 +41,5 @@ export class FormosaComponent implements OnInit {
       return total + taller.cantidad_de_internos_trabajadores;
     }, 0);
 
-    // Actualiza los datos del gráfico
-    this.pieChartLabels = this.talleresformosau10.map(taller => taller.nombre_de_taller);
-    this.pieChartData.datasets[0].data = this.talleresformosau10.map(taller => taller.cantidad_de_internos_trabajadores);
   }
 }
