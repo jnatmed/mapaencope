@@ -26,7 +26,7 @@ export class JujuyComponent implements OnInit {
     // Simula la carga de datos
     this.talleresjujuyu8 = [
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 64 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 64 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 27 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 2 },
@@ -44,7 +44,7 @@ export class JujuyComponent implements OnInit {
     this.talleresjujuyu22 = [
       { nombre_de_taller: 'Repostería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 12 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 9 + 7},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 9 + 7},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 6 },

@@ -38,7 +38,7 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 43 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 26 + 76},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 26 + 76},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 27 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 197 },
@@ -62,7 +62,7 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Muñequera', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Manualidades', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 3 + 5},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 3 + 5},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 3 },
@@ -79,7 +79,7 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 5 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 5 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 2 }
     ];

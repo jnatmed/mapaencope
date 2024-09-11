@@ -25,7 +25,7 @@ export class FormosaComponent implements OnInit {
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Ovinocultura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 19 + 10 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 19 + 10 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Electrotecnia', cantidad_de_internos_trabajadores: 1 },

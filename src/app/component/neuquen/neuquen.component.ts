@@ -25,7 +25,7 @@ export class NeuquenComponent implements OnInit {
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 18 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 66 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 96 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 96 },
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 79 },

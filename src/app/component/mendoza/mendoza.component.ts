@@ -27,7 +27,7 @@ export class MendozaComponent implements OnInit {
       { nombre_de_taller: 'Reciclado', cantidad_de_internos_trabajadores: 45 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 37 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 76 + 9},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 76 + 9},
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 52 },
       { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 194 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 27 },

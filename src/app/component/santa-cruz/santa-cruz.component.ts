@@ -26,7 +26,7 @@ export class SantaCruzComponent implements OnInit {
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 4 },
-      { nombre_de_taller: 'Mantenimiento Gral del Establecimiento', cantidad_de_internos_trabajadores: 23 + 11},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 23 + 11},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 13 },
       { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 15 },

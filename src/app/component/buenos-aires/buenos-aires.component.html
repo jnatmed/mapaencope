@@ -8,6 +8,7 @@
             <button (click)="templateSelected=complejoCuatro">CPF4</button>
             <button (click)="templateSelected=complejoSiete">CPFVII</button>
             <button (click)="templateSelected=unidadDiecinueve">U19</button>
+            <button (click)="templateSelected=unidadTreintaYCuatro">U34</button>
             <button (click)="templateSelected=complejoJa">CFJA</button>
             <button (click)="templateSelected=complejoCaba">CPFCABA</button>
         </div>
@@ -20,21 +21,9 @@
     
     <h1>Complejo Penitenciario Federal I - Ezeiza</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/cpf1.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/cpf1-3.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
-        </slide>     
-        <slide>
-            <img src="./assets/img/cpf1-4.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
-        </slide>   
-        <slide>
-            <img src="./assets/img/cpf1-5.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
-        </slide>   
-        <slide>
-            <img src="./assets/img/cpf1-6.png" alt="Complejo Penitenciario Federal 1" style="display: block; width: 100%;">
-        </slide>   
+      <slide *ngFor="let img of imagesCpf1">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> 
@@ -70,15 +59,9 @@
 <ng-template #complejoDos>
     <h1>Complejo Penitenciario Federal II - Marcos Paz</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/cpf2.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/cpf2-2.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/cpf2-3.png" alt="Complejo Penitenciario Federal 2" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let image of imagesCpf2">
+        <img [src]="image.src" [alt]="image.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> <br> El establecimiento cuenta con los siguientes talleres productivos: Herrería, Carpintería, Armado de broches de madera, Parques y jardines, Pastas, Repostería,Panadería, Sastrería, Carpintería.
@@ -240,6 +223,9 @@
         <slide>
             <img src="./assets/img/u19-8.png" alt="Unidad 19" style="display: block; width: 100%;">
         </slide>
+        <slide>
+            <img src="./assets/img/u19-9.png" alt="Unidad 19" style="display: block; width: 100%;">
+        </slide>
 
     </carousel>
 
@@ -273,18 +259,54 @@
 
 </ng-template>
 
+<ng-template #unidadTreintaYCuatro>
+
+  <h1>Unidad 34 - Instituto Penal Federal de Campo de Mayo</h1>
+  <br>
+  <br>
+
+  <carousel>
+    <slide *ngFor="let img of imagesU34">
+      <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+    </slide>
+  </carousel>
+
+  <p> <strong>Detalle de trabajo</strong>
+    <br>El Instituto Penal Federal de Campo de Mayo, habilitada para realizar talleres productivos de: Carpintería, Herrería, Armado de escobas, Panadería, Huerta orgánica..
+  </p>
+
+  <details class="details-container">
+    <summary class="details-summary">Total de internos trabajadores: {{ totalInternosu34 }}</summary>
+    <div class="talleres-container">
+      <table class="talleres-table">
+        <thead>
+          <tr>
+            
+            <th>Taller</th>
+            <th>Internos Trabajadores</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let taller of talleresu34">
+            
+            <td><b>{{ taller.nombre_de_taller }}</b></td>
+            <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </details>
+
+</ng-template>
+
+
 <ng-template #complejoJa>
     <h1>Complejo Federal de Jóvenes Adultos – Marcos Paz</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/cfja.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/cfja2.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/cfja3.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesCfja">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p>
@@ -318,15 +340,9 @@
 <ng-template #complejoCaba>
     <h1>Complejo Penitenciario Federal de la Ciudad Autónoma de Buenos Aires - DEVOTO</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/caba.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/caba2.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
-        <slide>
-            <img src="./assets/img/caba3.png" alt="Complejo Federal de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let image of imagesCaba">
+        <img [src]="image.src" [alt]="image.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p>
