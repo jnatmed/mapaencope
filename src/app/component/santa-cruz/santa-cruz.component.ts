@@ -17,6 +17,15 @@ export class SantaCruzComponent implements OnInit {
   tallersantacruzu15: Taller[] = []; // Array para almacenar los datos de los talleres de santa cruz u15
   totalInternossantacruzu15: number; // Variable para almacenar el total de internos trabajadores de santa cruz u15
 
+  imagesU15 = [
+    { src: './assets/img/u15.png', alt: 'U15' },
+    { src: './assets/img/u15-1.jpg', alt: 'U15' },
+    { src: './assets/img/u15-2.jpg', alt: 'U15' },
+    { src: './assets/img/u15-3.jpg', alt: 'U15' },
+    { src: './assets/img/u15-4.jpg', alt: 'U15' },
+    { src: './assets/img/u15-5.jpg', alt: 'U15' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,11 +34,11 @@ export class SantaCruzComponent implements OnInit {
       { nombre_de_taller: 'Transporte', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 3 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 4 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 23 + 11},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 4 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 23 + 11+4+15},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 13 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 15 },
+      // { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 15 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 14 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 7 },

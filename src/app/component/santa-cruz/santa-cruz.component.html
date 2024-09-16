@@ -2,7 +2,13 @@
     <div class="contenedorProv"> 
         <h1 class="titProv">Santa cruz</h1>     
         <h1>Unidad 15 - Cárcel de Río Gallegos</h1>
-        <img src="./assets/img/u15.png" alt="Unidad 15">
+
+        <carousel>
+          <slide *ngFor="let img of imagesU15">
+            <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+        
         <p> <strong>Detalle de trabajo</strong> <br>
         
             El establecimiento cuenta con los siguientes talleres productivos:

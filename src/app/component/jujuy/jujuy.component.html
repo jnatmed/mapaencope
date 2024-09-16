@@ -14,9 +14,9 @@
 <ng-template #unidad8>
     <h1> Unidad 8 - Instituto Penitenciario Federal </h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u8.png" alt="Unidad 8 - Instituto Penitenciario Federal" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU8">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <br>
@@ -58,6 +58,9 @@
     <carousel>
       <slide>
           <img src="./assets/img/u22.png" alt="Unidad 22 - Cárcel Federal de Jujuy" style="display: block; width: 100%;">
+      </slide>
+      <slide>
+          <img src="./assets/img/u22-1.jpg" alt="Unidad 22 - Cárcel Federal de Jujuy" style="display: block; width: 100%;">
       </slide>
     </carousel>    
 

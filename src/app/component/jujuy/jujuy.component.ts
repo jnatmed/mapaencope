@@ -20,15 +20,25 @@ export class JujuyComponent implements OnInit {
   talleresjujuyu22: Taller[] = []; // Array para almacenar los datos de los talleres
   totalInternosjujuyu22: number; // Variable para almacenar el total de internos trabajadores
 
+  imagesU8 = [
+    { src: './assets/img/u8.png', alt: 'u8' },
+    { src: './assets/img/u8-1.jpg', alt: 'u8' },
+    { src: './assets/img/u8-2.jpg', alt: 'u8' },
+    // { src: './assets/img/u8-3.jpg', alt: 'u8' },
+    { src: './assets/img/u8-4.jpg', alt: 'u8' },
+    { src: './assets/img/u8-5.jpg', alt: 'u8' },
+    { src: './assets/img/u8-6.jpg', alt: 'u8' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
     // Simula la carga de datos
     this.talleresjujuyu8 = [
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 64 },
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 64+18+2 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 27 },
-      { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 2 },
+      // { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 1 },
@@ -43,10 +53,10 @@ export class JujuyComponent implements OnInit {
     // Simula la carga de datos
     this.talleresjujuyu22 = [
       { nombre_de_taller: 'Repostería', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 12 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 9 + 7},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 12 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 9 + 7+12+4},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 6 },
-      { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 4 },
+      // { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 6 },

@@ -3,7 +3,11 @@
         <h1 class="titProv">Mendoza</h1>   
         <h1>Complejo Penitenciario Federal VI de Cuyo</h1>
 
-        <img src="./assets/img/cpf6.png" alt="ComplejoeVI">
+        <carousel>
+          <slide *ngFor="let img of imagesCpf6">
+            <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
 
         <br>
         <br>

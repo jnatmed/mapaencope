@@ -2,7 +2,11 @@
     <div class="contenedorProv">      
         <h1 class="titProv">Misiones</h1>
         <h1>Unidad 17 - Colonia Penal de Candelaria</h1>
-        <img src="./assets/img/u17.png" alt="Unidad17">
+        <carousel>
+          <slide *ngFor="let img of imagesU17">
+            <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
         <p> <strong>Detalle de trabajo</strong> <br>
         
             La unidad cuenta, entre otros, con los siguientes talleres productivos:

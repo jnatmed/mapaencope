@@ -15,9 +15,9 @@
     <h1> Unidad 7 - Prisión Regional del Norte </h1>
 
     <carousel>
-        <slide>
-            <img src="./assets/img/u7.png" alt="Unidad 7 - Prisión Regional del Norte" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU7">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> <br>La unidad cuenta con los siguientes talleres:
@@ -66,11 +66,13 @@
 
 <ng-template #unidad11>
     <h1>Unidad 11 - Colonia Penal de Presidencia Roque Sáenz Peña</h1>
+
     <carousel>
-        <slide>
-            <img src="./assets/img/u11.png" alt="Unidad 11 - Colonia Penal de Presidencia Roque Sáenz Peña" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU11">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
+
 
     <p> <strong>Detalle de trabajo</strong> <br> Cuenta, entre otros, con los siguientes talleres productivos:
 

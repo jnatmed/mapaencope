@@ -17,6 +17,21 @@ export class MisionesComponent implements OnInit {
   talleresmisionesu17: Taller[] = []; // Array para almacenar los datos de los talleres de misiones u17
   totalInternosmisionesu17: number; // Variable para almacenar el total de internos trabajadores de misiones u17
 
+  imagesU17 = [
+    { src: './assets/img/u17.png', alt: 'U17' },
+    { src: './assets/img/u17-1.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-2.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-3.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-4.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-5.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-6.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-7.jpeg', alt: 'U17' },
+    // { src: './assets/img/u17-8.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-9.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-10.jpeg', alt: 'U17' },
+    { src: './assets/img/u17-11.jpeg', alt: 'U17' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,10 +40,10 @@ export class MisionesComponent implements OnInit {
       { nombre_de_taller: 'Yerbal', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 8 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 24 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 46 +22},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 24 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 46 +22+24+28},
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 14 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 28 },
+      // { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 28 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 5 },
       { nombre_de_taller: 'Compostaje', cantidad_de_internos_trabajadores: 7 },

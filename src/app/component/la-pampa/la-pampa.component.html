@@ -16,9 +16,9 @@
 <ng-template #unidad4>
     <h1> Unidad 4 - Colonia Penal de Santa Rosa </h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u4.png" alt="Unidad 4 - Colonia Penal de Santa Rosa" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU4">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> 
@@ -57,9 +57,9 @@
 <ng-template #unidad13>
     <h1>Unidad 13 - Instituto Correccional de Mujeres</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u13.png" alt="Unidad 13 - Instituto Correccional de Mujeres" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU13">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> <br> Cuenta, entre otros, con los siguientes talleres productivos:
@@ -102,11 +102,10 @@
 <ng-template #unidad25>
     <h1>Unidad 25 - Instituto Correccional Abierto de General Pico</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u25.png" alt="Unidad 25 - Instituto Correccional Abierto de General Pico" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU25">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
-
     <p> <strong>Detalle de trabajo</strong> <br> Posee talleres productivos y de tareas generales, tales como:
 
         Albañilería,
@@ -153,9 +152,9 @@
 <ng-template #unidad30>
     <h1>Unidad 30 - Instituto de Jóvenes Adultos</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u30.png" alt="Unidad 30 - Instituto de Jóvenes Adultos" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU30">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> <br> La unidad cuenta, entre otros, con los siguientes talleres productivos:

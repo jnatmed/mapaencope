@@ -26,6 +26,57 @@ export class LaPampaComponent implements OnInit {
   tallereslapampau30: Taller[] = []; // Array para almacenar los datos de los talleres
   totalInternoslapampau30: number; // Variable para almacenar el total de internos trabajadores
 
+  
+  imagesU4 = [
+    { src: './assets/img/u4.png', alt: 'U4' },
+    { src: './assets/img/u4-1.jpg', alt: 'U4' },
+    { src: './assets/img/u4-2.jpg', alt: 'U4' },
+    { src: './assets/img/u4-3.jpg', alt: 'U4' },
+    { src: './assets/img/u4-4.jpg', alt: 'U4' },
+    { src: './assets/img/u4-5.jpg', alt: 'U4' },
+  ];
+
+  imagesU13 = [
+    { src: './assets/img/u13.png', alt: 'U13' },
+    { src: './assets/img/u13-1.jpg', alt: 'U13' },
+    { src: './assets/img/u13-2.jpg', alt: 'U13' },
+    { src: './assets/img/u13-3.jpg', alt: 'U13' },
+    { src: './assets/img/u13-4.jpg', alt: 'U13' },
+    { src: './assets/img/u13-5.jpg', alt: 'U13' },
+    { src: './assets/img/u13-6.jpg', alt: 'U13' },
+    { src: './assets/img/u13-7.jpg', alt: 'U13' },
+    { src: './assets/img/u13-8.jpg', alt: 'U13' },
+    { src: './assets/img/u13-9.jpg', alt: 'U13' },
+  ];
+
+  imagesU25 = [
+    { src: './assets/img/u25-15.jpg', alt: 'U25' },
+    { src: './assets/img/u25.png', alt: 'U25' },
+    { src: './assets/img/u25-1.jpg', alt: 'U25' },
+    // { src: './assets/img/u25-2.jpg', alt: 'U25' },
+    { src: './assets/img/u25-3.jpg', alt: 'U25' },
+    // { src: './assets/img/u25-4.jpg', alt: 'U25' },
+    { src: './assets/img/u25-5.jpg', alt: 'U25' },
+    // { src: './assets/img/u25-6.jpg', alt: 'U25' },
+    // { src: './assets/img/u25-7.jpg', alt: 'U25' },
+    { src: './assets/img/u25-8.jpg', alt: 'U25' },
+    { src: './assets/img/u25-9.jpg', alt: 'U25' },
+  ]
+
+  imagesU30 = [
+    { src: './assets/img/u30.png', alt: 'U25' },
+    { src: './assets/img/u30-1.jpg', alt: 'U25' },
+    { src: './assets/img/u30-2.jpg', alt: 'U25' },
+    { src: './assets/img/u30-3.jpg', alt: 'U25' },
+    { src: './assets/img/u30-4.jpg', alt: 'U25' },
+    { src: './assets/img/u30-5.jpg', alt: 'U25' },
+    { src: './assets/img/u30-6.jpg', alt: 'U25' },
+    { src: './assets/img/u30-7.jpg', alt: 'U25' },
+    { src: './assets/img/u30-8.jpg', alt: 'U25' },
+    { src: './assets/img/u30-9.jpg', alt: 'U25' },
+    { src: './assets/img/u30-10.jpg', alt: 'U25' },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
@@ -37,11 +88,11 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Quesería', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 14 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 43 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 26 + 76},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 43 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 26 + 76+43+197},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 27 },
-      { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 197 },
+      // { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 197 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 19 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 16 },
       { nombre_de_taller: 'Biodigestor', cantidad_de_internos_trabajadores: 4 },
@@ -60,9 +111,9 @@ export class LaPampaComponent implements OnInit {
       { nombre_de_taller: 'Tejido', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Repostería', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Muñequera', cantidad_de_internos_trabajadores: 4 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 2 },
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Manualidades', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 3 + 5},
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 3 + 5+2},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Costura', cantidad_de_internos_trabajadores: 3 },
@@ -78,8 +129,8 @@ export class LaPampaComponent implements OnInit {
     this.tallereslapampau25 = [
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 2 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 5 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 5 },
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 5 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 5 +5},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 2 }
     ];
@@ -91,7 +142,7 @@ export class LaPampaComponent implements OnInit {
 
     this.tallereslapampau30 = [
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 2 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 1 },

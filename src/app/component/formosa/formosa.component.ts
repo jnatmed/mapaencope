@@ -15,7 +15,18 @@ export class FormosaComponent implements OnInit {
 
   talleresformosau10: Taller[] = [];
   totalInternosformosau10: number;
-
+  
+  imagesU10 = [
+    { src: './assets/img/u10.png', alt: 'u10' },
+    { src: './assets/img/u10-1.jpg', alt: 'u10' },
+    { src: './assets/img/u10-2.jpg', alt: 'u10' },
+    { src: './assets/img/u10-3.jpg', alt: 'u10' },
+    { src: './assets/img/u10-4.jpg', alt: 'u10' },
+    { src: './assets/img/u10-5.jpg', alt: 'u10' },
+    { src: './assets/img/u10-6.jpg', alt: 'u10' },
+    { src: './assets/img/u10-7.jpg', alt: 'u10' },
+    { src: './assets/img/u10-8.jpg', alt: 'u10' },
+  ];
 
   constructor() { }
 
@@ -24,10 +35,10 @@ export class FormosaComponent implements OnInit {
     this.talleresformosau10 = [
       { nombre_de_taller: 'Porcicultura', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Ovinocultura', cantidad_de_internos_trabajadores: 1 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 19 + 10 },
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 18 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 19 + 10 +18+10},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 5 },
-      { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 10 },
+      // { nombre_de_taller: 'Higiene de Alojamiento', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Electrotecnia', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Cría de Caprino', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Cocina Central', cantidad_de_internos_trabajadores: 15 },

@@ -20,6 +20,28 @@ export class ChubutComponent implements OnInit {
   tallereschubutu14: Taller[] = []; // Array para almacenar los datos de los talleres de chubutu14
   totalInternoschubutu14: number; // Variable para almacenar el total de internos trabajadores de chubutu14
 
+  imagesU6 = [
+    { src: './assets/img/u6.png', alt: 'U6' },
+    { src: './assets/img/u6-1.jpg', alt: 'U6' },
+    { src: './assets/img/u6-2.jpg', alt: 'U6' },
+    { src: './assets/img/u6-3.jpg', alt: 'U6' },
+    { src: './assets/img/u6-4.jpg', alt: 'U6' },
+    { src: './assets/img/u6-5.jpg', alt: 'U6' },
+    { src: './assets/img/u6-6.jpg', alt: 'U6' },
+    { src: './assets/img/u6-7.jpg', alt: 'U6' },
+  ];
+
+  imagesU14 = [
+    { src: './assets/img/u14.png', alt: 'U14' },
+    { src: './assets/img/u14-1.jpg', alt: 'U14' },
+    { src: './assets/img/u14-2.jpg', alt: 'U14' },
+    { src: './assets/img/u14-3.jpg', alt: 'U14' },
+    { src: './assets/img/u14-4.jpg', alt: 'U14' },
+    { src: './assets/img/u14-5.jpg', alt: 'U14' },
+    { src: './assets/img/u14-6.jpg', alt: 'U14' },
+    { src: './assets/img/u14-7.jpg', alt: 'U14' },
+    { src: './assets/img/u14-8.jpg', alt: 'U14' },
+  ];
 
   constructor() { }
 
@@ -31,12 +53,12 @@ export class ChubutComponent implements OnInit {
       { nombre_de_taller: 'Reciclado de Papeles', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Planta Almazara', cantidad_de_internos_trabajadores: 1 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 9 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 22 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 47 + 41},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 22 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 47 + 41+22+155},
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 4 },
       { nombre_de_taller: 'Imprenta', cantidad_de_internos_trabajadores: 3 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 16 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 155 },
+      // { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 155 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 10 },
       { nombre_de_taller: 'Bloquería', cantidad_de_internos_trabajadores: 14 },
@@ -51,8 +73,8 @@ export class ChubutComponent implements OnInit {
     this.tallereschubutu14 = [
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 7 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 7 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 14 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 28 + 17},
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 14 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 28 + 17+14},
       { nombre_de_taller: 'Huerta', cantidad_de_internos_trabajadores: 11 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 8 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 5 },

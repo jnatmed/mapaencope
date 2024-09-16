@@ -17,6 +17,17 @@ export class NeuquenComponent implements OnInit {
   talleresneuquencpfv: Taller[] = []; // Array para almacenar los datos de los talleres
   totalInternosneuquencpfv: number; // Variable para almacenar el total de internos trabajadores
 
+  imagesCpf5 = [
+    { src: './assets/img/cpf5.png', alt: 'CPF5' },
+    { src: './assets/img/cpf5-1.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-2.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-3.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-4.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-5.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-6.jpg', alt: 'CPF5' },
+    { src: './assets/img/cpf5-7.jpg', alt: 'CPF5' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -24,12 +35,12 @@ export class NeuquenComponent implements OnInit {
     this.talleresneuquencpfv = [
       { nombre_de_taller: 'Sastrería', cantidad_de_internos_trabajadores: 18 },
       { nombre_de_taller: 'Panadería', cantidad_de_internos_trabajadores: 7 },
-      { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 66 },
-      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 96 },
+      // { nombre_de_taller: 'Mayordomía', cantidad_de_internos_trabajadores: 66 },
+      { nombre_de_taller: 'Mantenimiento', cantidad_de_internos_trabajadores: 96 +66+216},
       { nombre_de_taller: 'Lavadero de Ropa', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Lavadero Automotor', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Horticultura', cantidad_de_internos_trabajadores: 79 },
-      { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 216 },
+      // { nombre_de_taller: 'Higiene de Alojamientos', cantidad_de_internos_trabajadores: 216 },
       { nombre_de_taller: 'Herrería', cantidad_de_internos_trabajadores: 6 },
       { nombre_de_taller: 'Chapa y Pintura', cantidad_de_internos_trabajadores: 2 },
       { nombre_de_taller: 'Carpintería de Madera', cantidad_de_internos_trabajadores: 10 },

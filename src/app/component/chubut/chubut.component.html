@@ -14,9 +14,9 @@
 <ng-template #unidad6>
     <h1> Unidad 6 - Instituto de Seguridad y Resocialización </h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u6.png" alt="Unidad 6 - Instituto de Seguridad y Resocialización" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU6">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> 
@@ -52,7 +52,6 @@
             </thead>
             <tbody>
               <tr *ngFor="let taller of tallereschubutu6">
-                
                 <td><b>{{ taller.nombre_de_taller }}</b></td>
                 <td>{{ taller.cantidad_de_internos_trabajadores }}</td>
               </tr>
@@ -67,9 +66,9 @@
 <ng-template #unidad14>
     <h1>Unidad 14 - Cárcel de Esquel</h1>
     <carousel>
-        <slide>
-            <img src="./assets/img/u14.png" alt="Unidad 14 - Cárcel de Esquel" style="display: block; width: 100%;">
-        </slide>
+      <slide *ngFor="let img of imagesU14">
+        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+      </slide>
     </carousel>
 
     <p> <strong>Detalle de trabajo</strong> <br> Cuenta son los siguientes talleres productivos:

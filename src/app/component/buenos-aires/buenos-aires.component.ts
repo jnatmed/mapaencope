@@ -39,6 +39,10 @@ export class BuenosAiresComponent implements OnInit {
     { src: './assets/img/cfja.png', alt: 'Complejo Federal de Jóvenes Adultos' },
     { src: './assets/img/cfja2.png', alt: 'Complejo Federal de Jóvenes Adultos' },
     { src: './assets/img/cfja3.png', alt: 'Complejo Federal de Jóvenes Adultos' },
+    { src: './assets/img/cfja4.jpg', alt: 'Complejo Federal de Jóvenes Adultos' },
+    { src: './assets/img/cfja5.jpg', alt: 'Complejo Federal de Jóvenes Adultos' },
+    { src: './assets/img/cfja6.jpg', alt: 'Complejo Federal de Jóvenes Adultos' },
+    { src: './assets/img/cfja7.jpg', alt: 'Complejo Federal de Jóvenes Adultos' },
   ];
 
   imagesCaba = [
@@ -62,14 +66,14 @@ export class BuenosAiresComponent implements OnInit {
     { src: './assets/img/cpf1-6.png', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-7.jpg', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-8.jpg', alt: 'Complejo Penitenciario Federal 1' },
-    { src: './assets/img/cpf1-9.jpg', alt: 'Complejo Penitenciario Federal 1' },
+    // { src: './assets/img/cpf1-9.jpg', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-10.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-11.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-12.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-13.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-14.JPG', alt: 'Complejo Penitenciario Federal 1' },
-    { src: './assets/img/cpf1-15.JPG', alt: 'Complejo Penitenciario Federal 1' },
-    { src: './assets/img/cpf1-16.JPG', alt: 'Complejo Penitenciario Federal 1' },
+    // { src: './assets/img/cpf1-15.JPG', alt: 'Complejo Penitenciario Federal 1' },
+    // { src: './assets/img/cpf1-16.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-17.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-18.JPG', alt: 'Complejo Penitenciario Federal 1' },
     { src: './assets/img/cpf1-19.JPG', alt: 'Complejo Penitenciario Federal 1' }    
@@ -90,7 +94,6 @@ export class BuenosAiresComponent implements OnInit {
     { src: './assets/img/cpf2-12.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-13.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-14.jpeg', alt: 'Complejo Penitenciario Federal 2' },
-    { src: './assets/img/cpf2-15.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-16.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-17.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-18.jpeg', alt: 'Complejo Penitenciario Federal 2' },
@@ -114,7 +117,7 @@ export class BuenosAiresComponent implements OnInit {
     { src: './assets/img/cpf2-36.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-37.jpeg', alt: 'Complejo Penitenciario Federal 2' },
     { src: './assets/img/cpf2-38.jpeg', alt: 'Complejo Penitenciario Federal 2' },
-    { src: './assets/img/cpf2-39.jpeg', alt: 'Complejo Penitenciario Federal 2' }    
+    // { src: './assets/img/cpf2-39.jpeg', alt: 'Complejo Penitenciario Federal 2' }    
   ];
 
   constructor() { }

@@ -2,7 +2,13 @@
     <div class="contenedorProv">  
         <h1 class="titProv">Neuquen</h1>    
         <h1>Complejo Penitenciario Federal V</h1>
-        <img src="./assets/img/cpf5.png" alt="Complejo V">
+
+        <carousel>
+          <slide *ngFor="let img of imagesCpf5">
+            <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+          </slide>
+        </carousel>
+
         <p> <strong>Detalle de trabajo</strong> <br>
         
             Cuenta con talleres de:
