@@ -15,7 +15,9 @@
     <h1> Unidad 8 - Instituto Penitenciario Federal </h1>
     <carousel>
       <slide *ngFor="let img of imagesU8">
-        <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+        <div class="carousel-image-container">
+          <img [src]="img.src" [alt]="img.alt">
+        </div>
       </slide>
     </carousel>
 
@@ -56,12 +58,14 @@
     <h1>Unidad 22 - Cárcel Federal de Jujuy "Virgen de Punta Corral"</h1>
 
     <carousel>
-      <slide>
-          <img src="./assets/img/u22.png" alt="Unidad 22 - Cárcel Federal de Jujuy" style="display: block; width: 100%;">
-      </slide>
-      <slide>
-          <img src="./assets/img/u22-1.jpg" alt="Unidad 22 - Cárcel Federal de Jujuy" style="display: block; width: 100%;">
-      </slide>
+      <div class="carousel-image-container">
+        <slide>
+            <img src="./assets/img/u22.png" alt="Unidad 22 - Cárcel Federal de Jujuy">
+        </slide>
+        <slide>
+            <img src="./assets/img/u22-1.jpg" alt="Unidad 22 - Cárcel Federal de Jujuy">
+        </slide>
+      </div>
     </carousel>    
 
     <details class="details-container">

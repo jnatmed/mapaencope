@@ -5,7 +5,9 @@
 
         <carousel>
           <slide *ngFor="let img of imagesCpf6">
-            <img [src]="img.src" [alt]="img.alt" style="display: block; width: 100%;">
+            <div class="carousel-image-container">
+              <img [src]="img.src" [alt]="img.alt">
+            </div>
           </slide>
         </carousel>
 

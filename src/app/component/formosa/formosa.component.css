@@ -183,3 +183,18 @@ canvas {
     width: 100% !important; /* Asegura que el gráfico se ajuste al ancho del contenedor */
     height: 100% !important; /* Asegura que el gráfico se ajuste a la altura del contenedor */
   }
+
+  .carousel-image-container {
+    width: auto;  
+    height: 400px; /* Altura fija para todas las imágenes */
+    overflow: hidden;  /* Oculta cualquier parte de la imagen que exceda el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;  /* Mantiene la proporción de la imagen y la recorta si es necesario */
+  }
