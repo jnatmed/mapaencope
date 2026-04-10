@@ -1,32 +1,100 @@
-<div>
+<div class="mapa-page">
+  <aside class="side-menu">
+    <div class="side-menu__header">
+      <h2>Mapa interactivo</h2>
+      <p>Seleccioná una provincia para ver sus dependencias y entrar a administración.</p>
+    </div>
+
+    <p class="estadoMapa" *ngIf="loading">Cargando información del mapa...</p>
+    <p class="estadoMapa error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+    <div *ngIf="selectedProvince as province; else noProvinceSelected" class="side-menu__content">
+      <p class="side-menu__label">Provincia seleccionada</p>
+      <h3>{{ province.name }}</h3>
+
+      <div *ngIf="province.units.length > 0; else noUnits" class="side-menu__units">
+        <a
+          *ngFor="let unit of province.units; trackBy: trackByUnitId"
+          class="side-menu__admin-link"
+          [routerLink]="['/admin', province.slug, unit.id]">
+          <span class="side-menu__chip">{{ unit.abbreviation || unit.code || 'Unidad' }}</span>
+          <span class="side-menu__text">{{ unit.name }}</span>
+        </a>
+      </div>
+    </div>
+
+    <ng-template #noProvinceSelected>
+      <div class="side-menu__empty">
+        <p>Todavía no seleccionaste una provincia.</p>
+        <p>Hacé clic sobre el mapa para abrir sus unidades y administrar talleres o datos de dependencia.</p>
+      </div>
+    </ng-template>
+
+    <ng-template #noUnits>
+      <div class="side-menu__empty">
+        <p>Esta provincia no tiene dependencias cargadas para administrar.</p>
+      </div>
+    </ng-template>
+  </aside>
+
+  <section class="mapa-content">
     <div class="textMap">
-        <h2>Seleccioná la provincia para visualizar las unidades o complejos</h2> 
-        <h4>Las provincias que tienen un color diferente no poseen unidades o complejos.</h4>
+      <h2>Seleccioná la provincia para visualizar las unidades o complejos</h2>
+      <h4>Las provincias que tienen un color diferente no poseen unidades o complejos.</h4>
     </div>
 
-    <div class="middle-text"> </div>
-    <div class="mapaWeb">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1800 2300">
-          <svg:path 
-            *ngFor="let prov of provincias; let i = index"
-            [attr.data-index]="i"
-            (mouseover)="hover(i)"
-            (mouseout)="out(i)"
-            (click)="click(prov.component)"
-            [attr.d]="prov.provinciaPath"
-            [attr.fill]="prov.fill"
-            stroke="white"
-            stroke-width="3">
-             
-          </svg:path>
-        </svg>
+    <div class="mapa-layout">
+      <div class="mapaWeb">
+        <div class="map-toolbar">
+          <button type="button" class="map-toolbar__button" (click)="zoomIn()">+</button>
+          <button type="button" class="map-toolbar__button" (click)="zoomOut()">-</button>
+          <button type="button" class="map-toolbar__button map-toolbar__button--wide" (click)="resetZoom()">Reset</button>
+          <span class="map-toolbar__hint">{{ (zoomLevel * 100).toFixed(0) }}%</span>
+        </div>
 
+        <div
+          class="map-canvas"
+          (wheel)="onWheel($event)"
+          (mousedown)="startPan($event)"
+          (mousemove)="onPan($event)"
+          (mouseup)="stopPan()"
+          (mouseleave)="stopPan()">
+          <div class="map-viewport" [style.transform]="mapTransform">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1800 2300">
+              <svg:path
+                *ngFor="let prov of provincias; let i = index"
+                [attr.data-index]="i"
+                (mouseover)="hover(i)"
+                (mouseout)="out(i, prov.fill)"
+                (click)="click(prov)"
+                [attr.d]="prov.provinciaPath"
+                [attr.fill]="prov.fill"
+                stroke="white"
+                stroke-width="3">
+              </svg:path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="provincia" *ngIf="selectedProvince">
+        <app-province-detail
+          [province]="selectedProvince"
+          (modalAdminRequested)="openAdminModal($event)">
+        </app-province-detail>
+      </div>
     </div>
+  </section>
+</div>
 
-    <div class="provincia" *ngIf="template">
-
-        <ng-container *ngComponentOutlet="template"></ng-container>
-
-    </div>
-
+<div class="modal-backdrop" *ngIf="modalAdminProvinceSlug" (click)="closeAdminModal()">
+  <div class="modal-shell" (click)="$event.stopPropagation()">
+    <app-admin-dependencia
+      [modalMode]="true"
+      [provinceSlug]="modalAdminProvinceSlug"
+      [unitId]="modalAdminUnitId"
+      (closed)="closeAdminModal()"
+      (provinceUpdated)="handleProvinceUpdated($event)">
+    </app-admin-dependencia>
+  </div>
 </div>

@@ -45,11 +45,12 @@ export class MapaArgentinaSVG{
         nombre:string;
     }
 
-    export class MapaObjeto{
+export class MapaObjeto{
         provincia_id:string;
+        slug:string;
         nombreProvincia:string;
         provinciaPath:string;
-        component:any;
+        hasDetail:boolean;
         fill:string;
     }
 

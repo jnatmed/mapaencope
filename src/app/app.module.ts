@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,8 @@ import { RioNegroComponent } from './component/rio-negro/rio-negro.component';
 import { ChubutComponent } from './component/chubut/chubut.component';
 import { SantaCruzComponent } from './component/santa-cruz/santa-cruz.component';
 import { CabaComponent } from './component/caba/caba.component';
+import { ProvinceDetailComponent } from './component/province-detail/province-detail.component';
+import { AdminDependenciaComponent } from './pages/admin-dependencia/admin-dependencia.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -41,10 +44,14 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     RioNegroComponent,
     ChubutComponent,
     SantaCruzComponent,
-    CabaComponent
+    CabaComponent,
+    ProvinceDetailComponent,
+    AdminDependenciaComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     CarouselModule.forRoot(),
   ],

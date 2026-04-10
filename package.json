@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "server:start": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "server:db:create": "npm --prefix server run db:create",
+    "server:db:migrate": "npm --prefix server run db:migrate",
+    "server:seed:generate": "npm --prefix server run seed:generate",
+    "server:db:seed": "npm --prefix server run db:seed",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "test": "set NODE_OPTIONS=--openssl-legacy-provider && ng test",
     "lint": "ng lint",

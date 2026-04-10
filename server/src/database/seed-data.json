@@ -1,0 +1,2879 @@
+{
+  "provinces": [
+    {
+      "legacyId": 23,
+      "name": "Tierra del fuego",
+      "slug": "tierra-del-fuego",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 0,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 20,
+      "name": "Santa Cruz",
+      "slug": "santa-cruz",
+      "componentName": "SantaCruzComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 1,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 15 - Cárcel de Río Gallegos",
+          "code": null,
+          "detailText": "El establecimiento cuenta con los siguientes talleres productivos: Carpintería, Herrería, Bloquería, Tapicería, Panadería.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Transporte",
+              "workersCount": 2,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 2,
+              "displayOrder": 1
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 3,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 53,
+              "displayOrder": 3
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 4,
+              "displayOrder": 4
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 13,
+              "displayOrder": 5
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 5,
+              "displayOrder": 6
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 14,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 7,
+              "displayOrder": 8
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 7,
+              "displayOrder": 9
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u15.png",
+              "altText": "U15",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u15-1.jpg",
+              "altText": "U15",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u15-2.jpg",
+              "altText": "U15",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u15-3.jpg",
+              "altText": "U15",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u15-4.jpg",
+              "altText": "U15",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u15-5.jpg",
+              "altText": "U15",
+              "displayOrder": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 5,
+      "name": "Chubut",
+      "slug": "chubut",
+      "componentName": "ChubutComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 2,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 6 - Instituto de Seguridad y Resocialización",
+          "code": null,
+          "detailText": "En el establecimiento se desarrollan los siguientes talleres productivos: Carpintería, Tapicería, Imprenta, Reciclado de papel, Sastrería, Herrería, Mecánica del automotor, Chapa y pintura, Bloquería, Panadería, Lavadero de automotores, Electricidad, Pintura de obra, Plomería y gas, Albañilería.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Tapicería",
+              "workersCount": 5,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 7,
+              "displayOrder": 1
+            },
+            {
+              "name": "Reciclado de Papeles",
+              "workersCount": 2,
+              "displayOrder": 2
+            },
+            {
+              "name": "Planta Almazara",
+              "workersCount": 1,
+              "displayOrder": 3
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 9,
+              "displayOrder": 4
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 265,
+              "displayOrder": 5
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 4,
+              "displayOrder": 6
+            },
+            {
+              "name": "Imprenta",
+              "workersCount": 3,
+              "displayOrder": 7
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 16,
+              "displayOrder": 8
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 8,
+              "displayOrder": 9
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 10,
+              "displayOrder": 10
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 14,
+              "displayOrder": 11
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u6.png",
+              "altText": "U6",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u6-1.jpg",
+              "altText": "U6",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u6-2.jpg",
+              "altText": "U6",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u6-3.jpg",
+              "altText": "U6",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u6-4.jpg",
+              "altText": "U6",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u6-5.jpg",
+              "altText": "U6",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u6-6.jpg",
+              "altText": "U6",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u6-7.jpg",
+              "altText": "U6",
+              "displayOrder": 7
+            }
+          ]
+        },
+        {
+          "name": "Unidad 14 - Cárcel de Esquel",
+          "code": null,
+          "detailText": "Cuenta son los siguientes talleres productivos: Panadería Herrería Chapa y pintura Carpintería Horticultura Bloquearía.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Sastrería",
+              "workersCount": 7,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 7,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 59,
+              "displayOrder": 2
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 11,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 8,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 5,
+              "displayOrder": 5
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 5,
+              "displayOrder": 6
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u14.png",
+              "altText": "U14",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u14-1.jpg",
+              "altText": "U14",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u14-2.jpg",
+              "altText": "U14",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u14-3.jpg",
+              "altText": "U14",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u14-4.jpg",
+              "altText": "U14",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u14-5.jpg",
+              "altText": "U14",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u14-6.jpg",
+              "altText": "U14",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u14-7.jpg",
+              "altText": "U14",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u14-8.jpg",
+              "altText": "U14",
+              "displayOrder": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 19,
+      "name": "San Luis",
+      "slug": "san-luis",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 3,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 15,
+      "name": "Neuquen",
+      "slug": "neuquen",
+      "componentName": "NeuquenComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 4,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Complejo Penitenciario Federal V",
+          "code": null,
+          "detailText": "Cuenta con talleres de: Jardinería, Electricidad, Artículos de limpieza, Plomería, Albañilería, Horticultura, Guitarra.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Sastrería",
+              "workersCount": 18,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 7,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 378,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 2,
+              "displayOrder": 3
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 2,
+              "displayOrder": 4
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 79,
+              "displayOrder": 5
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 6,
+              "displayOrder": 6
+            },
+            {
+              "name": "Chapa y Pintura",
+              "workersCount": 2,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 10,
+              "displayOrder": 8
+            },
+            {
+              "name": "Artesanías",
+              "workersCount": 5,
+              "displayOrder": 9
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf5.png",
+              "altText": "CPF5",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-1.jpg",
+              "altText": "CPF5",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-2.jpg",
+              "altText": "CPF5",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-3.jpg",
+              "altText": "CPF5",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-4.jpg",
+              "altText": "CPF5",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-5.jpg",
+              "altText": "CPF5",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-6.jpg",
+              "altText": "CPF5",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/cpf5-7.jpg",
+              "altText": "CPF5",
+              "displayOrder": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 16,
+      "name": "Rio Negro",
+      "slug": "rio-negro",
+      "componentName": "RioNegroComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 5,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 5 - Colonia Penal de General Roca",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres industriales, de laborterapia y de mantenimiento: Albañilería, Plomería, Cocina, Electrotécnica, Aserradero, Mosaiquería, Sastrería, Carpintería, Ladrillería, Panadería, Herrería, Mecánica, Talleres agropecuarios, Horticultura, Vivero y jardinería, Fruticultura.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Vivero",
+              "workersCount": 7,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 6,
+              "displayOrder": 1
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 10,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mosaiquería",
+              "workersCount": 6,
+              "displayOrder": 3
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 183,
+              "displayOrder": 4
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 7,
+              "displayOrder": 5
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 9,
+              "displayOrder": 6
+            },
+            {
+              "name": "Fruticultura",
+              "workersCount": 6,
+              "displayOrder": 7
+            },
+            {
+              "name": "Elaboración de Dulces y Mermeladas",
+              "workersCount": 7,
+              "displayOrder": 8
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 6,
+              "displayOrder": 9
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 5,
+              "displayOrder": 10
+            },
+            {
+              "name": "Aserradero",
+              "workersCount": 11,
+              "displayOrder": 11
+            },
+            {
+              "name": "Apicultura",
+              "workersCount": 1,
+              "displayOrder": 12
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u5.png",
+              "altText": "U5",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u5-1.jpeg",
+              "altText": "U5",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u5-2.jpeg",
+              "altText": "U5",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u5-3.jpeg",
+              "altText": "U5",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u5-4.jpeg",
+              "altText": "U5",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u5-5.jpeg",
+              "altText": "U5",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u5-6.jpeg",
+              "altText": "U5",
+              "displayOrder": 6
+            }
+          ]
+        },
+        {
+          "name": "Unidad 12 - Colonia Penal de Viedma",
+          "code": null,
+          "detailText": "Los talleres se encuentran organizados en distintas secciones. Entre otros se dictan: Horticultura, Agricultura, Porcicultura, Herrería, Carpintería, Chapa, Pintura, Mecánica, Panadería, Lavadero de autos, Bloquería, Sastrería.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Sastrería",
+              "workersCount": 19,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 22,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 61,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 5,
+              "displayOrder": 3
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 2,
+              "displayOrder": 4
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 14,
+              "displayOrder": 5
+            },
+            {
+              "name": "Chapa y Pintura",
+              "workersCount": 14,
+              "displayOrder": 6
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 15,
+              "displayOrder": 7
+            },
+            {
+              "name": "Cabaña Encope",
+              "workersCount": 1,
+              "displayOrder": 8
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 22,
+              "displayOrder": 9
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 14,
+              "displayOrder": 10
+            },
+            {
+              "name": "Agricultura - Reservas Forrajeras",
+              "workersCount": 2,
+              "displayOrder": 11
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u12.png",
+              "altText": "U12",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u12-1.jpg",
+              "altText": "U12",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u12-2.jpg",
+              "altText": "U12",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u12-3.jpg",
+              "altText": "U12",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u12-4.jpg",
+              "altText": "U12",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u12-5.jpg",
+              "altText": "U12",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u12-6.jpg",
+              "altText": "U12",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u12-7.jpg",
+              "altText": "U12",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u12-8.jpg",
+              "altText": "U12",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/u12-9.jpg",
+              "altText": "U12",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/u12-10.jpg",
+              "altText": "U12",
+              "displayOrder": 10
+            },
+            {
+              "imageUrl": "/assets/img/u12-11.jpg",
+              "altText": "U12",
+              "displayOrder": 11
+            },
+            {
+              "imageUrl": "/assets/img/u12-12.jpg",
+              "altText": "U12",
+              "displayOrder": 12
+            },
+            {
+              "imageUrl": "/assets/img/u12-13.jpg",
+              "altText": "U12",
+              "displayOrder": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 11,
+      "name": "La Pampa",
+      "slug": "la-pampa",
+      "componentName": "LaPampaComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 6,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 4 - Colonia Penal de Santa Rosa",
+          "code": null,
+          "detailText": "Los talleres productivos de este establecimiento se dividen en tres secciones: Industrial: herrería, corte y doblado de chapa, carpintería, imprenta, fábrica de ladrillos, sastrería, panadería, aserradero, mecánica, chapa y pintura. Agropecuario: tambo, porcicultura, avicultura, chacinados, fábrica de quesos, agricultura, corte de leña, parques y jardines, horticultura, apicultura y cunicultura. Mantenimiento: albañilería, plomería, electrotécnica, lavadero, peluquería.",
+          "displayOrder": 0,
+          "workshops": [],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u4.png",
+              "altText": "U4",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u4-1.jpg",
+              "altText": "U4",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u4-2.jpg",
+              "altText": "U4",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u4-3.jpg",
+              "altText": "U4",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u4-4.jpg",
+              "altText": "U4",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u4-5.jpg",
+              "altText": "U4",
+              "displayOrder": 5
+            }
+          ]
+        },
+        {
+          "name": "Unidad 13 - Instituto Correccional de Mujeres",
+          "code": null,
+          "detailText": "Cuenta, entre otros, con los siguientes talleres productivos: Repostería, Lavandería, Costura, Tejido, Muñequería, Manualidades, Horticultura, Mantenimiento, Cocina central.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Tejido",
+              "workersCount": 4,
+              "displayOrder": 0
+            },
+            {
+              "name": "Repostería",
+              "workersCount": 2,
+              "displayOrder": 1
+            },
+            {
+              "name": "Muñequera",
+              "workersCount": 4,
+              "displayOrder": 2
+            },
+            {
+              "name": "Manualidades",
+              "workersCount": 2,
+              "displayOrder": 3
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 10,
+              "displayOrder": 4
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 3,
+              "displayOrder": 5
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 1,
+              "displayOrder": 6
+            },
+            {
+              "name": "Costura",
+              "workersCount": 3,
+              "displayOrder": 7
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 6,
+              "displayOrder": 8
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u13.png",
+              "altText": "U13",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u13-1.jpg",
+              "altText": "U13",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u13-2.jpg",
+              "altText": "U13",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u13-3.jpg",
+              "altText": "U13",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u13-4.jpg",
+              "altText": "U13",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u13-5.jpg",
+              "altText": "U13",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u13-6.jpg",
+              "altText": "U13",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u13-7.jpg",
+              "altText": "U13",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u13-8.jpg",
+              "altText": "U13",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/u13-9.jpg",
+              "altText": "U13",
+              "displayOrder": 9
+            }
+          ]
+        },
+        {
+          "name": "Unidad 25 - Instituto Correccional Abierto de General Pico",
+          "code": null,
+          "detailText": "Posee talleres productivos y de tareas generales, tales como: Albañilería, Carpintería, Electricidad, Herrería, Lavadero de autos, Panadería, Parques y jardines. A su vez, a 3 kilómetros se sitúa el campo laboral El Fortín, de 22 hectáreas, donde funcionan los talleres de: Avicultura, Ovinocultura, Porcicultura, Cunicultura, Agricultura.",
+          "displayOrder": 2,
+          "workshops": [
+            {
+              "name": "Porcicultura",
+              "workersCount": 2,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 2,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 10,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 1,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 2,
+              "displayOrder": 4
+            }
+          ],
+          "images": []
+        },
+        {
+          "name": "Unidad 30 - Instituto de Jóvenes Adultos",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Horticultura, Lavadero de Automotores, Carpintería, Avicultura, Herrería, Panadería, Mantenimiento general.",
+          "displayOrder": 3,
+          "workshops": [
+            {
+              "name": "Panadería",
+              "workersCount": 1,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 2,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 2,
+              "displayOrder": 2
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 8,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 1,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 1,
+              "displayOrder": 5
+            }
+          ],
+          "images": []
+        }
+      ]
+    },
+    {
+      "legacyId": 13,
+      "name": "Mendoza",
+      "slug": "mendoza",
+      "componentName": "MendozaComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 7,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Complejo Penitenciario Federal VI de Cuyo",
+          "code": null,
+          "detailText": "El complejo posee, entre otros, los siguientes talleres productivos: costura/sastreria, articulos de limpieza, bordado/sublimado, carpinteria, fabricaciones de pañales, parques y jardines.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Tejido",
+              "workersCount": 3,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 25,
+              "displayOrder": 1
+            },
+            {
+              "name": "Reciclado",
+              "workersCount": 45,
+              "displayOrder": 2
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 2,
+              "displayOrder": 3
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 316,
+              "displayOrder": 4
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 52,
+              "displayOrder": 5
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 27,
+              "displayOrder": 6
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 24,
+              "displayOrder": 7
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 2,
+              "displayOrder": 8
+            },
+            {
+              "name": "Agricultura",
+              "workersCount": 7,
+              "displayOrder": 9
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf6.png",
+              "altText": "CPFVI",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-1.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-2.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-3.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-4.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-5.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-6.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-7.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-8.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-9.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-10.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 10
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-11.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 11
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-12.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 12
+            },
+            {
+              "imageUrl": "/assets/img/cpf6-13.jpg",
+              "altText": "CPFVI",
+              "displayOrder": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 18,
+      "name": "San Juan",
+      "slug": "san-juan",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 8,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 2,
+      "name": "Buenos Aires",
+      "slug": "buenos-aires",
+      "componentName": "BuenosAiresComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 9,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Complejo Penitenciario Federal I - Ezeiza",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Panadería, Herrería, Carpintería, Zapatería, Sastrería, Imprenta, Armado de carteras.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Zapatería",
+              "workersCount": 15,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 24,
+              "displayOrder": 1
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 3,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 563,
+              "displayOrder": 3
+            },
+            {
+              "name": "Imprenta",
+              "workersCount": 4,
+              "displayOrder": 4
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 20,
+              "displayOrder": 5
+            },
+            {
+              "name": "Costura",
+              "workersCount": 16,
+              "displayOrder": 6
+            },
+            {
+              "name": "Carpintería Metálica",
+              "workersCount": 11,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 3,
+              "displayOrder": 8
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 107,
+              "displayOrder": 9
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf1.png",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-3.png",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-4.png",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-5.png",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-6.png",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-7.jpg",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-8.jpg",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-10.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-11.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-12.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-13.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 10
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-14.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 11
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-17.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 12
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-18.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 13
+            },
+            {
+              "imageUrl": "/assets/img/cpf1-19.JPG",
+              "altText": "Complejo Penitenciario Federal 1",
+              "displayOrder": 14
+            }
+          ]
+        },
+        {
+          "name": "Complejo Penitenciario Federal II - Marcos Paz",
+          "code": null,
+          "detailText": "El establecimiento cuenta con los siguientes talleres productivos: Herrería, Carpintería, Armado de broches de madera, Parques y jardines, Pastas, Repostería,Panadería, Sastrería, Carpintería.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Sastrería",
+              "workersCount": 49,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 620,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 3,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 5,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 7,
+              "displayOrder": 4
+            },
+            {
+              "name": "Fábrica de Pastas",
+              "workersCount": 3,
+              "displayOrder": 5
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 59,
+              "displayOrder": 6
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 29,
+              "displayOrder": 7
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 3,
+              "displayOrder": 8
+            },
+            {
+              "name": "Armado de Broches",
+              "workersCount": 1,
+              "displayOrder": 9
+            },
+            {
+              "name": "Anexo Carpintería",
+              "workersCount": 9,
+              "displayOrder": 10
+            },
+            {
+              "name": "Anexo Bloquería",
+              "workersCount": 2,
+              "displayOrder": 11
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf2-2.png",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-3.png",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-4.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-5.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-6.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-7.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-8.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-9.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-10.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-11.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-12.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 10
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-13.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 11
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-14.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 12
+            },
+            {
+              "imageUrl": "/assets/img/cpf2-16.jpeg",
+              "altText": "Complejo Penitenciario Federal 2",
+              "displayOrder": 13
+            }
+          ]
+        },
+        {
+          "name": "Complejo Penitenciario Federal IV de Mujeres - Ezeiza",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Cerámica, Costura y Tejido, Encuadernación, Fibrofacíl, Huerta y Jardinería, Lavadero, Muñequería, Peluquería, Repostería y Sandwichería, Serigrafía.",
+          "displayOrder": 2,
+          "workshops": [
+            {
+              "name": "Tejido",
+              "workersCount": 24,
+              "displayOrder": 0
+            },
+            {
+              "name": "Taller Copiado y Encuadernado",
+              "workersCount": 10,
+              "displayOrder": 1
+            },
+            {
+              "name": "Sublimado",
+              "workersCount": 11,
+              "displayOrder": 2
+            },
+            {
+              "name": "Repostería",
+              "workersCount": 10,
+              "displayOrder": 3
+            },
+            {
+              "name": "Reciclado",
+              "workersCount": 42,
+              "displayOrder": 4
+            },
+            {
+              "name": "Peluquería",
+              "workersCount": 7,
+              "displayOrder": 5
+            },
+            {
+              "name": "Muñequera",
+              "workersCount": 22,
+              "displayOrder": 6
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 201,
+              "displayOrder": 7
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 11,
+              "displayOrder": 8
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 5,
+              "displayOrder": 9
+            },
+            {
+              "name": "Florihorticultura",
+              "workersCount": 3,
+              "displayOrder": 10
+            },
+            {
+              "name": "Fibrofacil",
+              "workersCount": 19,
+              "displayOrder": 11
+            },
+            {
+              "name": "Estrechando Manos",
+              "workersCount": 4,
+              "displayOrder": 12
+            },
+            {
+              "name": "Costura",
+              "workersCount": 19,
+              "displayOrder": 13
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 14,
+              "displayOrder": 14
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf4.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-2.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-3.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-4.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-5.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-6.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf4-7.png",
+              "altText": "Complejo Penitenciario Federal 4",
+              "displayOrder": 6
+            }
+          ]
+        },
+        {
+          "name": "Complejo Penitenciario Federal VII de Mujeres - Ezeiza",
+          "code": null,
+          "detailText": "La unidad cuenta con los siguientes talleres productivos: Costura, Marroquinería, Muñequería, Panadería, Armado de carpetas, Armado de bolsas de cartón, Lavandería.",
+          "displayOrder": 3,
+          "workshops": [
+            {
+              "name": "Panaderia",
+              "workersCount": 7,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 58,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 3,
+              "displayOrder": 2
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 9,
+              "displayOrder": 3
+            },
+            {
+              "name": "Costura",
+              "workersCount": 22,
+              "displayOrder": 4
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 4,
+              "displayOrder": 5
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u31.png",
+              "altText": "Complejo Penitenciario Federal 7",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u31-2.png",
+              "altText": "Complejo Penitenciario Federal 7",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u31-3.png",
+              "altText": "Complejo Penitenciario Federal 7",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u31-4.png",
+              "altText": "Complejo Penitenciario Federal 7",
+              "displayOrder": 3
+            }
+          ]
+        },
+        {
+          "name": "Unidad 19 - Colonia Penal de Ezeiza",
+          "code": null,
+          "detailText": "La Colonia Penal de Ezeiza U.19, habilitada el 20 de abril en el año 1968, es un establecimiento con régimen semiabierto y abierto que aloja, en seis pabellones comunes, a personas privadas de libertad que se encuentran en la última etapa de tratamiento.",
+          "displayOrder": 4,
+          "workshops": [
+            {
+              "name": "Tambo",
+              "workersCount": 5,
+              "displayOrder": 0
+            },
+            {
+              "name": "Quesería",
+              "workersCount": 3,
+              "displayOrder": 1
+            },
+            {
+              "name": "Porcicultura",
+              "workersCount": 6,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 62,
+              "displayOrder": 3
+            },
+            {
+              "name": "Huerta Orgánica",
+              "workersCount": 4,
+              "displayOrder": 4
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 3,
+              "displayOrder": 5
+            },
+            {
+              "name": "Domisanitario",
+              "workersCount": 5,
+              "displayOrder": 6
+            },
+            {
+              "name": "Costura",
+              "workersCount": 1,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 7,
+              "displayOrder": 8
+            },
+            {
+              "name": "Armado de Broches",
+              "workersCount": 9,
+              "displayOrder": 9
+            },
+            {
+              "name": "Alimento Balanceado",
+              "workersCount": 6,
+              "displayOrder": 10
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u19.png",
+              "altText": "Unidad 19",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u19-2.png",
+              "altText": "Unidad 19",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u19-3.png",
+              "altText": "Unidad 19",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u19-4.png",
+              "altText": "Unidad 19",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u19-5.png",
+              "altText": "Unidad 19",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u19-6.png",
+              "altText": "Unidad 19",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u19-7.png",
+              "altText": "Unidad 19",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u19-8.png",
+              "altText": "Unidad 19",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u19-9.png",
+              "altText": "Unidad 19",
+              "displayOrder": 8
+            }
+          ]
+        },
+        {
+          "name": "Unidad 34 - Instituto Penal Federal de Campo de Mayo",
+          "code": null,
+          "detailText": "El Instituto Penal Federal de Campo de Mayo está habilitado para realizar talleres productivos de: Carpintería, Herrería, Armado de escobas, Panadería, Huerta orgánica.",
+          "displayOrder": 5,
+          "workshops": [
+            {
+              "name": "Mantenimiento",
+              "workersCount": 25,
+              "displayOrder": 0
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u34-1.jpg",
+              "altText": "u34",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u34-2.jpg",
+              "altText": "u34",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u34-3.jpg",
+              "altText": "u34",
+              "displayOrder": 2
+            }
+          ]
+        },
+        {
+          "name": "Complejo Federal de Jóvenes Adultos – Marcos Paz",
+          "code": null,
+          "detailText": "En el establecimiento se desarrollan los siguientes talleres productivos: Armado de pelotas, Armado de bicicletas, Carpintería, Herrería, Armado de bolsas de papel, Porcicultura, Cría bovina, Elaboración de artículos de limpieza, Armado de escobas y escobillones, Armado de broches, Taller de panadería, Producción de snacks.",
+          "displayOrder": 6,
+          "workshops": [
+            {
+              "name": "Panadería",
+              "workersCount": 8,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 29,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 3,
+              "displayOrder": 2
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 13,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 3,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería Metálica",
+              "workersCount": 6,
+              "displayOrder": 5
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 55,
+              "displayOrder": 6
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 74,
+              "displayOrder": 7
+            },
+            {
+              "name": "Alimento Balanceado",
+              "workersCount": 3,
+              "displayOrder": 8
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cfja.png",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cfja2.png",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cfja3.png",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cfja4.jpg",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cfja5.jpg",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cfja6.jpg",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cfja7.jpg",
+              "altText": "Complejo Federal de Jóvenes Adultos",
+              "displayOrder": 6
+            }
+          ]
+        },
+        {
+          "name": "Complejo Penitenciario Federal de la Ciudad Autónoma de Buenos Aires - DEVOTO",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Panadería, Sastrería, Herrería, Carpintería, Automotores, Domisanitario, Armado de bolsas de madera.",
+          "displayOrder": 7,
+          "workshops": [
+            {
+              "name": "Sastrería",
+              "workersCount": 5,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 9,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 431,
+              "displayOrder": 2
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 2,
+              "displayOrder": 3
+            },
+            {
+              "name": "Fibrofacil",
+              "workersCount": 56,
+              "displayOrder": 4
+            },
+            {
+              "name": "Electrotecnia",
+              "workersCount": 1,
+              "displayOrder": 5
+            },
+            {
+              "name": "Domisanitario",
+              "workersCount": 2,
+              "displayOrder": 6
+            },
+            {
+              "name": "Costura",
+              "workersCount": 310,
+              "displayOrder": 7
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 8,
+              "displayOrder": 8
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 1,
+              "displayOrder": 9
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 1,
+              "displayOrder": 10
+            },
+            {
+              "name": "Armado de Juguetes Didácticos",
+              "workersCount": 182,
+              "displayOrder": 11
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/caba.png",
+              "altText": "caba",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/caba2.png",
+              "altText": "caba",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/caba3.png",
+              "altText": "caba",
+              "displayOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 12,
+      "name": "La Rioja",
+      "slug": "la-rioja",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 10,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 3,
+      "name": "Catamarca",
+      "slug": "catamarca",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 11,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 24,
+      "name": "Tucumán",
+      "slug": "tucuman",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 12,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 22,
+      "name": "Santiago del Estero",
+      "slug": "santiago-del-estero",
+      "componentName": "SantiagoComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 13,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 35 - Instituto Penal Federal de Colonia Pinto",
+          "code": null,
+          "detailText": "La unidad cuenta con los siguientes talleres productivos: Carpintería, Herrería, Armado de escobas, Panadería, Huerta orgánica.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Panadería",
+              "workersCount": 9,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 134,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 1,
+              "displayOrder": 2
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 6,
+              "displayOrder": 3
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 3,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 6,
+              "displayOrder": 5
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 1,
+              "displayOrder": 6
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u35.png",
+              "altText": "Unidad 35",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u35-1.jpg",
+              "altText": "Unidad 35",
+              "displayOrder": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 17,
+      "name": "Salta",
+      "slug": "salta",
+      "componentName": "SaltaComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 14,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 16 - Instituto Penitenciario Federal de Salta",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Carpintería, Herrería, Artesanía, Bloquería, Horticultura, Mantenimiento interno, Mecánica automotores, Lavadero artesanal de autos, Talabartería.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Talabartería",
+              "workersCount": 6,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 56,
+              "displayOrder": 1
+            },
+            {
+              "name": "Huerta",
+              "workersCount": 20,
+              "displayOrder": 2
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 5,
+              "displayOrder": 3
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 14,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 8,
+              "displayOrder": 5
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 5,
+              "displayOrder": 6
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 2,
+              "displayOrder": 7
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 3,
+              "displayOrder": 8
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u16.png",
+              "altText": "u16",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u16_01.jpg",
+              "altText": "u16",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u16_02.jpg",
+              "altText": "u16",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u16_03.jpg",
+              "altText": "u16",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u16_04.jpg",
+              "altText": "u16",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u16_05.jpg",
+              "altText": "u16",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u16_06.jpg",
+              "altText": "u16",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u16_07.jpg",
+              "altText": "u16",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u16_08.jpg",
+              "altText": "u16",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/u16_09.jpg",
+              "altText": "u16",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/u16_10.jpg",
+              "altText": "u16",
+              "displayOrder": 10
+            },
+            {
+              "imageUrl": "/assets/img/u16_11.jpg",
+              "altText": "u16",
+              "displayOrder": 11
+            },
+            {
+              "imageUrl": "/assets/img/u16_12.jpg",
+              "altText": "u16",
+              "displayOrder": 12
+            },
+            {
+              "imageUrl": "/assets/img/u16_13.jpg",
+              "altText": "u16",
+              "displayOrder": 13
+            }
+          ]
+        },
+        {
+          "name": "Complejo Penitenciario Federal III",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Para mujeres: Parquizado, Costura, Tejido a máquina, Tejido a mano, Artículos de limpieza, Artesanía, Para varones: Herrería, Bloquería, Carpintería, Panadería, Lavandería, Sastrería, Peluquería, Parque y jardín.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Tejido",
+              "workersCount": 14,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 14,
+              "displayOrder": 1
+            },
+            {
+              "name": "Repostería",
+              "workersCount": 6,
+              "displayOrder": 2
+            },
+            {
+              "name": "Peluquería",
+              "workersCount": 1,
+              "displayOrder": 3
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 2,
+              "displayOrder": 4
+            },
+            {
+              "name": "Marroquinería y Talabartería",
+              "workersCount": 1,
+              "displayOrder": 5
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 347,
+              "displayOrder": 6
+            },
+            {
+              "name": "Lavadero de Ropa",
+              "workersCount": 10,
+              "displayOrder": 7
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 22,
+              "displayOrder": 8
+            },
+            {
+              "name": "Costura",
+              "workersCount": 11,
+              "displayOrder": 9
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 21,
+              "displayOrder": 10
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 12,
+              "displayOrder": 11
+            },
+            {
+              "name": "Artículos de Limpieza",
+              "workersCount": 8,
+              "displayOrder": 12
+            },
+            {
+              "name": "Artesanías",
+              "workersCount": 19,
+              "displayOrder": 13
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/cpf3.png",
+              "altText": "cpf3",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-1.jpg",
+              "altText": "cpf3",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-2.jpg",
+              "altText": "cpf3",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-3.jpg",
+              "altText": "cpf3",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-4.jpg",
+              "altText": "cpf3",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-5.jpg",
+              "altText": "cpf3",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-7.jpg",
+              "altText": "cpf3",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/cpf3-8.jpg",
+              "altText": "cpf3",
+              "displayOrder": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 10,
+      "name": "Jujuy",
+      "slug": "jujuy",
+      "componentName": "JujuyComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 15,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 8 - Instituto Penitenciario Federal",
+          "code": null,
+          "detailText": "En la unidad se dictan diferentes talleres: Bloquería, Tallado de madera, Carpintería industrial, Herrería, Panadería, Albañilería, Electricidad, Plomería.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Mantenimiento",
+              "workersCount": 84,
+              "displayOrder": 0
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 27,
+              "displayOrder": 1
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 2,
+              "displayOrder": 2
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 1,
+              "displayOrder": 3
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 1,
+              "displayOrder": 4
+            },
+            {
+              "name": "Artesanías Regionales",
+              "workersCount": 2,
+              "displayOrder": 5
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u8.png",
+              "altText": "u8",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u8-1.jpg",
+              "altText": "u8",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u8-2.jpg",
+              "altText": "u8",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u8-4.jpg",
+              "altText": "u8",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u8-5.jpg",
+              "altText": "u8",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u8-6.jpg",
+              "altText": "u8",
+              "displayOrder": 5
+            }
+          ]
+        },
+        {
+          "name": "Unidad 22 - Cárcel Federal de Jujuy \"Virgen de Punta Corral\"",
+          "code": null,
+          "detailText": null,
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Repostería",
+              "workersCount": 6,
+              "displayOrder": 0
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 32,
+              "displayOrder": 1
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 6,
+              "displayOrder": 2
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 6,
+              "displayOrder": 3
+            },
+            {
+              "name": "Costura",
+              "workersCount": 1,
+              "displayOrder": 4
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 6,
+              "displayOrder": 5
+            },
+            {
+              "name": "Artesanías",
+              "workersCount": 5,
+              "displayOrder": 6
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u22.png",
+              "altText": "Unidad 22 - Cárcel Federal de Jujuy",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u22-1.jpg",
+              "altText": "Unidad 22 - Cárcel Federal de Jujuy",
+              "displayOrder": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 9,
+      "name": "Formosa",
+      "slug": "formosa",
+      "componentName": "FormosaComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 16,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 10 - Cárcel de Formosa",
+          "code": null,
+          "detailText": "La unidad posee, entre otros, los siguientes talleres productivos: Carpintería, Tejido, Cocina, Panadería, Fajina penal.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Porcicultura",
+              "workersCount": 3,
+              "displayOrder": 0
+            },
+            {
+              "name": "Ovinocultura",
+              "workersCount": 1,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 57,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 5,
+              "displayOrder": 3
+            },
+            {
+              "name": "Electrotecnia",
+              "workersCount": 1,
+              "displayOrder": 4
+            },
+            {
+              "name": "Cría de Caprino",
+              "workersCount": 1,
+              "displayOrder": 5
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 15,
+              "displayOrder": 6
+            },
+            {
+              "name": "Chapa y Pintura",
+              "workersCount": 2,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 4,
+              "displayOrder": 8
+            },
+            {
+              "name": "Avicultura",
+              "workersCount": 1,
+              "displayOrder": 9
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u10.png",
+              "altText": "u10",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u10-1.jpg",
+              "altText": "u10",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u10-2.jpg",
+              "altText": "u10",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u10-3.jpg",
+              "altText": "u10",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u10-4.jpg",
+              "altText": "u10",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u10-5.jpg",
+              "altText": "u10",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u10-6.jpg",
+              "altText": "u10",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u10-7.jpg",
+              "altText": "u10",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u10-8.jpg",
+              "altText": "u10",
+              "displayOrder": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 8,
+      "name": "Entre Ríos",
+      "slug": "entre-rios",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 17,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 4,
+      "name": "Chaco",
+      "slug": "chaco",
+      "componentName": "ChacoComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 18,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 7 - Prisión Regional del Norte",
+          "code": null,
+          "detailText": "La unidad cuenta con los siguientes talleres: Albañilería, Herrería de obra, Bloquería, Horticultura, Huerta orgánica, Carpintería, Imprenta, Carpintería metálica, Panadería, Electricidad, Plomería, Lavadero de autos, Jardinería, Zapatería, Sastrería, Mecánica.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Talabartería",
+              "workersCount": 5,
+              "displayOrder": 0
+            },
+            {
+              "name": "Sastrería",
+              "workersCount": 8,
+              "displayOrder": 1
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 13,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 253,
+              "displayOrder": 3
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 6,
+              "displayOrder": 4
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 40,
+              "displayOrder": 5
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 11,
+              "displayOrder": 6
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 2,
+              "displayOrder": 7
+            },
+            {
+              "name": "Carpintería Metálica",
+              "workersCount": 2,
+              "displayOrder": 8
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 10,
+              "displayOrder": 9
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 9,
+              "displayOrder": 10
+            },
+            {
+              "name": "Automotores",
+              "workersCount": 7,
+              "displayOrder": 11
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u7-1.jpg",
+              "altText": "u7",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u7-2.jpg",
+              "altText": "u7",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u7-3.jpg",
+              "altText": "u7",
+              "displayOrder": 2
+            }
+          ]
+        },
+        {
+          "name": "Unidad 11 - Colonia Penal de Presidencia Roque Sáenz Peña",
+          "code": null,
+          "detailText": "Cuenta, entre otros, con los siguientes talleres productivos: Sastrería, Lavadero de ropa, Carpintería, Aserradero, Ladrillería, Albañilería, Panadería, Plomería, Cocina central, Chapa y pintura, Automotores, Herrería, Agricultura, Tambo, Porcicultura, Horticultura.",
+          "displayOrder": 1,
+          "workshops": [
+            {
+              "name": "Porcicultura",
+              "workersCount": 4,
+              "displayOrder": 0
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 14,
+              "displayOrder": 1
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 101,
+              "displayOrder": 2
+            },
+            {
+              "name": "Lavadero Automotor",
+              "workersCount": 1,
+              "displayOrder": 3
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 5,
+              "displayOrder": 4
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 9,
+              "displayOrder": 5
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 6,
+              "displayOrder": 6
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 6,
+              "displayOrder": 7
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u11-1.jpg",
+              "altText": "u11",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u11-2.jpg",
+              "altText": "u11",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u11-3.jpg",
+              "altText": "u11",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u11-4.jpg",
+              "altText": "u11",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u11-5.jpg",
+              "altText": "u11",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u11-6.jpg",
+              "altText": "u11",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u11-7.jpg",
+              "altText": "u11",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u11-8.jpg",
+              "altText": "u11",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u11-9.jpeg",
+              "altText": "u11",
+              "displayOrder": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 7,
+      "name": "Corrientes",
+      "slug": "corrientes",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 19,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 14,
+      "name": "Misiones",
+      "slug": "misiones",
+      "componentName": "MisionesComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 20,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Unidad 17 - Colonia Penal de Candelaria",
+          "code": null,
+          "detailText": "La unidad cuenta, entre otros, con los siguientes talleres productivos: Albañilería, Bloquería, Carpintería, Herrería, Mecánica, Panadería, Yerbal, Avicultura, Porcicultura, Huerta.",
+          "displayOrder": 0,
+          "workshops": [
+            {
+              "name": "Yerbal",
+              "workersCount": 5,
+              "displayOrder": 0
+            },
+            {
+              "name": "Porcicultura",
+              "workersCount": 3,
+              "displayOrder": 1
+            },
+            {
+              "name": "Panadería",
+              "workersCount": 8,
+              "displayOrder": 2
+            },
+            {
+              "name": "Mantenimiento",
+              "workersCount": 120,
+              "displayOrder": 3
+            },
+            {
+              "name": "Horticultura",
+              "workersCount": 14,
+              "displayOrder": 4
+            },
+            {
+              "name": "Herrería",
+              "workersCount": 4,
+              "displayOrder": 5
+            },
+            {
+              "name": "Costura",
+              "workersCount": 5,
+              "displayOrder": 6
+            },
+            {
+              "name": "Compostaje",
+              "workersCount": 7,
+              "displayOrder": 7
+            },
+            {
+              "name": "Cocina Central",
+              "workersCount": 13,
+              "displayOrder": 8
+            },
+            {
+              "name": "Carpintería de Madera",
+              "workersCount": 8,
+              "displayOrder": 9
+            },
+            {
+              "name": "Bloquería",
+              "workersCount": 2,
+              "displayOrder": 10
+            }
+          ],
+          "images": [
+            {
+              "imageUrl": "/assets/img/u17.png",
+              "altText": "U17",
+              "displayOrder": 0
+            },
+            {
+              "imageUrl": "/assets/img/u17-1.jpeg",
+              "altText": "U17",
+              "displayOrder": 1
+            },
+            {
+              "imageUrl": "/assets/img/u17-2.jpeg",
+              "altText": "U17",
+              "displayOrder": 2
+            },
+            {
+              "imageUrl": "/assets/img/u17-3.jpeg",
+              "altText": "U17",
+              "displayOrder": 3
+            },
+            {
+              "imageUrl": "/assets/img/u17-4.jpeg",
+              "altText": "U17",
+              "displayOrder": 4
+            },
+            {
+              "imageUrl": "/assets/img/u17-5.jpeg",
+              "altText": "U17",
+              "displayOrder": 5
+            },
+            {
+              "imageUrl": "/assets/img/u17-6.jpeg",
+              "altText": "U17",
+              "displayOrder": 6
+            },
+            {
+              "imageUrl": "/assets/img/u17-7.jpeg",
+              "altText": "U17",
+              "displayOrder": 7
+            },
+            {
+              "imageUrl": "/assets/img/u17-9.jpeg",
+              "altText": "U17",
+              "displayOrder": 8
+            },
+            {
+              "imageUrl": "/assets/img/u17-10.jpeg",
+              "altText": "U17",
+              "displayOrder": 9
+            },
+            {
+              "imageUrl": "/assets/img/u17-11.jpeg",
+              "altText": "U17",
+              "displayOrder": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 6,
+      "name": "Córdoba",
+      "slug": "cordoba",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 21,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 21,
+      "name": "Santa Fe",
+      "slug": "santa-fe",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 22,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 1,
+      "name": "Ciudad Autónoma de Buenos Aires",
+      "slug": "ciudad-autonoma-de-buenos-aires",
+      "componentName": "CabaComponent",
+      "fillColor": "#4d646b",
+      "displayOrder": 23,
+      "hasDetail": true,
+      "units": [
+        {
+          "name": "Complejo Penitenciario Federal de la Ciudad Autónoma de Buenos Aires",
+          "code": null,
+          "detailText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ipsum in risus pulvinar lacinia. Curabitur ut ante eget enim gravida suscipit at vel quam. Quisque varius id nunc vitae feugiat. Duis venenatis libero ante, nec rhoncus quam finibus vel. Etiam volutpat eros id odio commodo, et ullamcorper turpis vehicula. Duis semper purus arcu, in elementum lorem consequat sed. Donec suscipit orci at libero vulputate sodales. Nam sed neque eu ligula mollis fringilla. Sed arcu nisi, commodo sed velit vitae, maximus vestibulum neque. Suspendisse sed tincidunt nulla. Nunc et est erat. In accumsan dapibus velit nec lacinia. Sed a odio in dolor porta venenatis. Praesent fringilla blandit nisl eu viverra.",
+          "displayOrder": 0,
+          "workshops": [],
+          "images": [
+            {
+              "imageUrl": "/assets/img/caba.png",
+              "altText": "Complejo Penitenciario Federal de la Ciudad Autónoma de Buenos Aires",
+              "displayOrder": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "legacyId": 25,
+      "name": "Isla Gran Malvinas",
+      "slug": "isla-gran-malvinas",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 24,
+      "hasDetail": false,
+      "units": []
+    },
+    {
+      "legacyId": 26,
+      "name": "Isla Soledad",
+      "slug": "isla-soledad",
+      "componentName": null,
+      "fillColor": "#5DC1B9",
+      "displayOrder": 25,
+      "hasDetail": false,
+      "units": []
+    }
+  ]
+}

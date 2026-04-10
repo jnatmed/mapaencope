@@ -1,0 +1,68 @@
+<div class="cuadroProvincia" *ngIf="province">
+  <div class="contenedorProv">
+    <h1 class="titProv">{{ province.name }}</h1>
+
+    <div class="botonera" *ngIf="province.units.length > 1">
+      <button
+        *ngFor="let unit of province.units; let i = index; trackBy: trackByUnitId"
+        type="button"
+        (click)="selectUnit(i)">
+        {{ unit.abbreviation || unit.code || unit.name }}
+      </button>
+    </div>
+
+    <ng-container *ngIf="selectedUnit as unit; else noData">
+      <h1>{{ unit.name }}</h1>
+
+      <div class="admin-link-row">
+        <a [routerLink]="['/admin', province.slug, unit.id]">Administrar dependencia</a>
+        <button
+          type="button"
+          class="admin-modal-badge"
+          (click)="openAdminModal(unit)"
+          aria-label="Abrir administración en modal"
+          title="Abrir en modal">
+          <span aria-hidden="true">▣</span>
+        </button>
+      </div>
+
+      <carousel *ngIf="unit.images.length > 0">
+        <slide *ngFor="let image of unit.images">
+          <div class="carousel-image-container">
+            <img [src]="image.imageUrl" [alt]="image.altText || unit.name">
+          </div>
+        </slide>
+      </carousel>
+
+      <p *ngIf="unit.detailText">
+        <strong>Detalle de trabajo</strong>
+        <br>
+        {{ unit.detailText }}
+      </p>
+
+      <details class="details-container" *ngIf="unit.workshops.length > 0">
+        <summary class="details-summary">Total de internos trabajadores: {{ totalWorkers(unit) }}</summary>
+        <div class="talleres-container">
+          <table class="talleres-table">
+            <thead>
+              <tr>
+                <th>Taller</th>
+                <th>Internos Trabajadores</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let workshop of unit.workshops">
+                <td data-label="Taller"><b>{{ workshop.name }}</b></td>
+                <td data-label="Internos Trabajadores">{{ workshop.workersCount }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </ng-container>
+
+    <ng-template #noData>
+      <p>No hay detalle cargado todavía para esta provincia.</p>
+    </ng-template>
+  </div>
+</div>

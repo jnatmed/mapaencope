@@ -1,0 +1,97 @@
+<div class="admin-page" [class.admin-page--modal]="modalMode">
+  <button
+    *ngIf="modalMode"
+    type="button"
+    class="modal-close"
+    (click)="close()"
+    aria-label="Cerrar modal"
+    title="Cerrar">
+    x
+  </button>
+
+  <div class="admin-header">
+    <button type="button" class="back-link" (click)="close()">
+      {{ modalMode ? 'Cerrar' : 'Volver al mapa' }}
+    </button>
+
+    <div class="admin-header__content">
+      <h1>Administración de dependencias</h1>
+      <p *ngIf="province" class="admin-header__province">{{ province.name }}</p>
+    </div>
+  </div>
+
+  <p class="status" *ngIf="loading">Cargando datos de administración...</p>
+  <p class="status error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  <p class="status success" *ngIf="message">{{ message }}</p>
+
+  <div *ngIf="province && selectedUnit as unit" class="admin-layout">
+    <section class="panel">
+      <label class="field">
+        <span>Dependencia</span>
+        <select [ngModel]="unit.id" (ngModelChange)="onUnitChange($event)">
+          <option *ngFor="let item of province.units" [ngValue]="item.id">
+            {{ item.abbreviation || item.code || item.name }}
+          </option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>Nombre</span>
+        <input type="text" [(ngModel)]="unitForm.name">
+      </label>
+
+      <label class="field">
+        <span>Código</span>
+        <input type="text" [(ngModel)]="unitForm.code">
+      </label>
+
+      <label class="field">
+        <span>Abreviatura</span>
+        <input type="text" [(ngModel)]="unitForm.abbreviation" placeholder="Ej. CPF1, U19, CFJA">
+      </label>
+
+      <label class="field">
+        <span>Detalle de trabajo</span>
+        <textarea rows="6" [(ngModel)]="unitForm.detailText"></textarea>
+      </label>
+
+      <button type="button" class="primary" (click)="saveUnit()" [disabled]="saving">Guardar dependencia</button>
+    </section>
+
+    <section class="panel">
+      <h2>Talleres</h2>
+
+      <div class="new-workshop">
+        <input type="text" [(ngModel)]="newWorkshop.name" placeholder="Nuevo taller">
+        <input type="number" [(ngModel)]="newWorkshop.workersCount" min="0" placeholder="Internos">
+        <button type="button" class="primary" (click)="createWorkshop()" [disabled]="saving">Agregar</button>
+      </div>
+
+      <div class="workshop-list" *ngIf="unit.workshops.length > 0; else noWorkshops">
+        <div class="workshop-row" *ngFor="let workshop of unit.workshops">
+          <ng-container *ngIf="editingWorkshopId === workshop.id; else readOnlyWorkshop">
+            <input type="text" [(ngModel)]="workshopDrafts[workshop.id].name">
+            <input type="number" [(ngModel)]="workshopDrafts[workshop.id].workersCount" min="0">
+            <button type="button" class="primary" (click)="saveWorkshop(workshop.id)" [disabled]="saving">Guardar</button>
+            <button type="button" class="ghost" (click)="cancelWorkshopEdit()" [disabled]="saving">Cancelar</button>
+          </ng-container>
+
+          <ng-template #readOnlyWorkshop>
+            <div class="workshop-info">
+              <strong>{{ workshop.name }}</strong>
+              <span>{{ workshop.workersCount }} internos</span>
+            </div>
+            <div class="workshop-actions">
+              <button type="button" class="ghost" (click)="editWorkshop(workshop.id)">Editar</button>
+              <button type="button" class="danger" (click)="deleteWorkshop(workshop.id)" [disabled]="saving">Eliminar</button>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+
+      <ng-template #noWorkshops>
+        <p>No hay talleres cargados para esta unidad.</p>
+      </ng-template>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,222 @@
+.admin-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  font-family: 'calibri', 'helvetica', 'open sans', san-serif;
+}
+
+.admin-page--modal {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  max-height: calc(100vh - 104px);
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #667085;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #2a3045;
+}
+
+.admin-header {
+  margin-bottom: 24px;
+}
+
+.admin-header h1 {
+  margin: 10px 0 4px;
+  color: #2a3045;
+}
+
+.admin-header__content {
+  min-width: 0;
+}
+
+.admin-header__province {
+  margin: 0;
+  color: #2a3045;
+}
+
+.admin-page--modal .admin-header {
+  display: block;
+  padding-right: 52px;
+}
+
+.admin-page--modal .admin-header h1 {
+  margin: 0;
+}
+
+.admin-page--modal .admin-header__province {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #eef7fd;
+  border: 1px solid #d7e8f6;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.back-link {
+  border: none;
+  background: transparent;
+  color: #088edd;
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.admin-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: 24px;
+}
+
+.admin-page--modal .admin-layout {
+  align-items: start;
+  max-height: calc(100vh - 190px);
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #d8e2ea;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(31, 48, 74, 0.08);
+}
+
+.admin-page--modal .panel:last-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  max-height: calc(100vh - 190px);
+}
+
+.field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.field span,
+.panel h2 {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #2a3045;
+}
+
+.field input,
+.field textarea,
+.field select,
+.new-workshop input {
+  width: 100%;
+  border: 1px solid #bfd0dc;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.new-workshop {
+  display: grid;
+  grid-template-columns: 1.5fr 120px auto;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.workshop-list {
+  display: grid;
+  gap: 12px;
+}
+
+.admin-page--modal .workshop-list {
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.workshop-row {
+  border: 1px solid #e3ebf2;
+  border-radius: 12px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.workshop-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.workshop-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary,
+.ghost,
+.danger {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.primary {
+  background: #088edd;
+  color: #fff;
+}
+
+.ghost {
+  background: #eef4f8;
+  color: #2a3045;
+}
+
+.danger {
+  background: #fdecec;
+  color: #b42318;
+}
+
+.status {
+  margin: 0 0 16px;
+}
+
+.status.error {
+  color: #b42318;
+}
+
+.status.success {
+  color: #127c4f;
+}
+
+@media (max-width: 900px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .new-workshop,
+  .workshop-row {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-actions {
+    justify-content: flex-start;
+  }
+}
